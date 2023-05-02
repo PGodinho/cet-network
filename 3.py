@@ -2,7 +2,7 @@
 # Programa para demonstrar o funcionamento das variáveis, Strings, inteiros, reais
 # e entrada de dados.
 #
-# 19-04-2023, Paulo Godinho
+# 19-04-2023
 # ----------------------------------------------------------------------------------
 
 '''nome = input('Introduza o seu nome: ')
