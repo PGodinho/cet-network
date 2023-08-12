@@ -46,7 +46,7 @@ message:
   style: "is-dark" # See https://bulma.io/documentation/components/message/#colors for styling options.
   title: "CET-NETWORK"
   icon: "fa fa-solid fa-skull-crossbones"
-  content: "Sebenta. <br /> Find more information on <a href='#'>Anónimo de Sousa</a>"
+  content: "Sebenta. <br /> Find more information on <a href='https://paulo-godinho.soundworks.live'>Paulo Godinho</a>"
 
 # Optional navbar
 # links: [] # Allows for navbar (dark mode, layout, and search) without any links
@@ -110,23 +110,22 @@ services:
         tag: "vscode"
         url: "https://vscode.dev/"
         target: "_blank" # optional html a tag target attribute
+      - name: "CPanel"
+        logo: "assets/tools/contabo.png"
+        subtitle: "Contabo web space."
+        tag: "cpanel"
+        keywords: "web space manager"
+        url: "#"
+        target: "_blank" # optional html a tag target attribute
   ##############################################################################################################
   - name: "Applications"
     icon: "fas fa-cloud"
     items:
-      - name: "Pi-Hole"
-        logo: "assets/tools/pi-hole.svg"
-        subtitle: "Network-wide Ad Blocking"
-        tag: "app"
-        keywords: "pi"
-        url: "http://lf-pi-1.home.arpa/admin/login.php"
-        target: "_blank"
-        target: "_blank" # optional html a tag target attribute
       - name: "Plex"
         logo: "assets/tools/plex-logo.svg"
         subtitle: "Media Player"
         tag: "app"
-        url: "#"
+        url: "https://www.plex.tv"
         target: "_blank" # optional html a tag target attribute
   ###################################################################
   - name: "interesting links"
@@ -136,7 +135,7 @@ services:
         subtitle: "If you want to support me, buy me a coffee "
         tag: "tip me"
         logo: "https://www.buymeacoffee.com/assets/img/guidelines/logo-mark-1.svg"
-        url: "#"
+        url: "https://www.buymeacoffee.com/pauloGod"
       - name: "r/selfhosted"
         icon: "fa-brands fa-reddit-alien"
         subtitle: "Bookmark example"

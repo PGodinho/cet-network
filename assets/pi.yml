@@ -19,13 +19,13 @@ links:
     url: "#"
   - name: "1"
     icon: "fab fa-raspberry-pi"
-    url: "http://lf-pi-1.home.arpa/"
+    url: "#"
   - name: "2"
     icon: "fab fa-raspberry-pi"
-    url: "http://lf-pi-2.home.arpa/"
+    url: "#"
   - name: "4"
     icon: "fab fa-raspberry-pi"
-    url: "http://lf-pi-4.home.arpa/"
+    url: "#"
 ######################################################################
 services:
   - name: "More applications on another page!"
