@@ -141,7 +141,7 @@ services:
       - name: "Cisco"
         logo: "./assets/tools/cisco.svg"
         subtitle: "Networking Academy"
-        tag: "office"
+        tag: "cisco"
         url: "https://www.netacad.com/"
         target: "_blank" # optional html a tag target attribute
       - name: "W3Schools"
