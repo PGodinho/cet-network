@@ -139,7 +139,7 @@ services:
         url: "https://www.office.com/?auth=2"
         target: "_blank" # optional html a tag target attribute
       - name: "Cisco"
-        logo: "./tools/cisco.svg"
+        logo: "./assets/tools/cisco.svg"
         subtitle: "Networking Academy"
         tag: "office"
         url: "https://www.netacad.com/"
