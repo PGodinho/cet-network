@@ -138,6 +138,12 @@ services:
         tag: "office"
         url: "https://www.office.com/?auth=2"
         target: "_blank" # optional html a tag target attribute
+      - name: "Cisco"
+        logo: "./tools/cisco.svg"
+        subtitle: "Networking Academy"
+        tag: "office"
+        url: "https://www.netacad.com/"
+        target: "_blank" # optional html a tag target attribute
       - name: "W3Schools"
         logo: "https://upload.wikimedia.org/wikipedia/commons/a/a0/W3Schools_logo.svg"
         subtitle: "Online Web Tutorials"
