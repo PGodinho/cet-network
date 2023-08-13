@@ -3,7 +3,7 @@
 # See https://fontawesome.com/v5/search for icons options
 
 title: "CET-NETWORK"
-subtitle: "Administração de Redes e Sistemas"
+subtitle: "Systems & Network Administration"
 logo: "logo.svg"
 # icon: "fas fa-skull-crossbones" # Optional icon
 
@@ -68,20 +68,24 @@ links:
     url: "https://www.routerpasswords.com"
     target: "_blank" # optional html a tag target attribute
   - name: "Printer"
-    icon: "fas fa-print"
+    icon: "fa fa-print"
     url: "https://www.cups.org"
     target: "_blank" # optional html a tag target attribute
   - name: "Scanner"
     icon: "fas fa-barcode"
     url: "https://github.com/sbs20/scanserv"
     target: "_blank" # optional html a tag target attribute
+  - name: "Wiki"
+    icon: "fas fa-book"
+    url: "https://wikipedia.org/"
+    target: "_blank" # optional html a tag target attribute
   - name: "GitHub"
     icon: "fab fa-github"
     url: "https://github.com/"
     target: "_blank" # optional html a tag target attribute
-  - name: "Wiki"
-    icon: "fas fa-book"
-    url: "https://www.wikipedia.org/"
+  - name: "Wiki-This"
+    icon: "fa-brands fa-github-square fa-xl"
+    url: "https://github.com/PGodinho/cet-network/wiki"
     target: "_blank" # optional html a tag target attribute
   - name: "Contribute"
     icon: "fab fa-github"

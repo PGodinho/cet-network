@@ -1,7 +1,7 @@
 # CET-Network
 
+Server Landing page
+
 Documents Archive
 
 ---
-
-Server Landing page
