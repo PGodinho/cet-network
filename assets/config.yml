@@ -75,10 +75,6 @@ links:
     icon: "fas fa-barcode"
     url: "https://github.com/sbs20/scanserv"
     target: "_blank" # optional html a tag target attribute
-  - name: "Wiki"
-    icon: "fas fa-book"
-    url: "https://wikipedia.org/"
-    target: "_blank" # optional html a tag target attribute
   - name: "GitHub"
     icon: "fab fa-github"
     url: "https://github.com/"
@@ -86,6 +82,10 @@ links:
   - name: "Wiki-This"
     icon: "fa-brands fa-github-square fa-xl"
     url: "https://github.com/PGodinho/cet-network/wiki"
+    target: "_blank" # optional html a tag target attribute
+  - name: "Wiki"
+    icon: "fas fa-book"
+    url: "https://wikipedia.org/"
     target: "_blank" # optional html a tag target attribute
   - name: "Contribute"
     icon: "fab fa-github"
