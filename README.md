@@ -2,7 +2,7 @@
 
 ## Server Landing page
 
-![1692050995470](image/README/1692050995470.png)
+![1692054191931](image/README/1692054191931.png)
 
 ## Documents Archive
 
@@ -12,6 +12,8 @@
 * Ferramenta Publica Collaborativa online.
 
 Mais info: [Cet-Network.WIKI](https://github.com/PGodinho/cet-network/wiki)
+
+---
 
 [HOMER](https://github.com/bastienwirtz/homer)
 

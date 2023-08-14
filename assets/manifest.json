@@ -1,6 +1,6 @@
 {
-    "name": "Homer dashboard",
-    "short_name": "Homer",
+    "name": "CET-NETWORK dashboard",
+    "short_name": "CET-NETWORK",
     "start_url": "../",
     "display": "standalone",
     "background_color": "#ffffff",
