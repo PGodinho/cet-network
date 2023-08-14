@@ -160,6 +160,12 @@ services:
         tag: "tutorials"
         url: "https://www.w3schools.com/"
         target: "_blank" # optional html a tag target attribute
+      - name: "Web Check"
+        logo: "https://cet-web-check.netlify.app/web-check.png"
+        subtitle: "Online Network Tools"
+        tag: "web-check"
+        url: "https://cet-web-check.netlify.app"
+        target: "_blank" # optional html a tag target attribute
   ###################################################################
   - name: "interesting links"
     icon: "fas fa-solid fa-arrow-up-right-from-square"
