@@ -10,3 +10,5 @@ Documents Archive
 * Repositório de Ensaios & configuração
 * Relatórios
 * Ferramenta Publica Collaborativa online.
+
+Mais info: [Cet-Network.WIKI](https://github.com/PGodinho/cet-network/wiki)
