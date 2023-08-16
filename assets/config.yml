@@ -27,9 +27,9 @@ colors:
     link: "#3273dc"
     link-hover: "#363636"
   dark:
-    highlight-primary: "#0d04034" #"#3367d6"
-    highlight-secondary: "#4d0a03" #"#4285f4"
-    highlight-hover: "#111" #"#5a95f5"
+    highlight-primary: "#131313" #"#3367d6"
+    highlight-secondary: "#4285f4"
+    highlight-hover: "#5a95f5"
     background: "#131313"
     card-background: "#2b2b2b"
     text: "#eaeaea"
