@@ -166,6 +166,12 @@ services:
         tag: "web-check"
         url: "https://cet-web-check.netlify.app"
         target: "_blank" # optional html a tag target attribute
+      - name: "Security Check List"
+        logo: "https://security-list.js.org/security-list-icon_white.png"
+        subtitle: "Online Security List"
+        tag: "web-check"
+        url: "https://security-list.js.org"
+        target: "_blank" # optional html a tag target attribute  
   ###################################################################
   - name: "interesting links"
     icon: "fas fa-solid fa-arrow-up-right-from-square"
