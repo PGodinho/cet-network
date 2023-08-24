@@ -4,7 +4,8 @@
 # Additional configurations are loaded using its file name, minus the extension, as an anchor (https://<mydashboad>#<config>).
 # `config.yml` is still used as a base configuration, and all values here will overwrite it, so you don't have to re-defined everything
 
-subtitle: "UFCD"
+#title: "CET-NETWORK"
+subtitle: "UFCD - Systems & Network Administration"
 
 # This overwrites message config. Setting it to empty to remove message from this page and keep it only in the main one:
 message: ~
@@ -23,13 +24,16 @@ links:
     url: "#"
   - name: "1"
     icon: "fas fa-terminal"
-    url: "#"
+    url: "https://cli.github.com/"
+    target: "_blank" # optional html a tag target attribute 
   - name: "2"
-    icon: "fab fa-raspberry-pi"
-    url: "#"
+    icon: "fa fa-table"
+    url: "https://github.com/topics/spreadsheet"
+    target: "_blank" # optional html a tag target attribute
   - name: "4"
-    icon: "fab fa-raspberry-pi"
-    url: "#"
+    icon: "fa fa-align-justify"
+    url: "https://github.com/topics/markdown"
+    target: "_blank" # optional html a tag target attribute
 ######################################################################
 services:
   - name: "More applications on another page!"
