@@ -4,6 +4,10 @@
 
 ![1692054191931](image/README/1692054191931.png)
 
+## Install
+
+Download and drop the content in your webserver
+
 ## Documents Archive
 
 * Maqueta de trabalho de Grupo.
