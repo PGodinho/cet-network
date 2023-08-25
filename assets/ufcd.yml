@@ -22,15 +22,16 @@ links:
   - name: "Network"
     icon: "fas fa-network-wired"
     url: "https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/7/html/networking_guide/index"
-  - name: "1"
+    target: "_blank" # optional html a tag target attribute
+  - name: "Terminal"
     icon: "fas fa-terminal"
     url: "https://cli.github.com/"
     target: "_blank" # optional html a tag target attribute 
-  - name: "2"
+  - name: "Spredsheet"
     icon: "fa fa-table"
     url: "https://github.com/topics/spreadsheet"
     target: "_blank" # optional html a tag target attribute
-  - name: "4"
+  - name: "Text Editor"
     icon: "fa fa-align-justify"
     url: "https://github.com/topics/markdown"
     target: "_blank" # optional html a tag target attribute
