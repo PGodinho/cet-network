@@ -2,7 +2,7 @@
 
 ## Server Landing page
 
-![1692054191931](image/README/1692054191931.png)
+![1693492208724](image/README/1693492208724.png)
 
 ## Install
 
