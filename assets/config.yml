@@ -183,9 +183,9 @@ services:
         url: "https://www.ssh.com/academy/ssh/client"
         target: "_blank" # optional html a tag target attribute
       - name: "Workspace FrameWork !"
+        icon: "fa-solid fa-square-person-confined"
         subtitle: "Ergonomic Clearances"
         tag: "ergonomic"
-        logo: "https://miro.medium.com/v2/resize:fit:640/format:webp/1*vNzYb2LAkOLSYftqTuiFSw.png"
         url: "https://sustema.medium.com/ergonomic-clearances-for-control-room-82743f9fa1d6"
         target: "_blank" # optional html a tag target attribute
       - name: "r/selfhosted"
