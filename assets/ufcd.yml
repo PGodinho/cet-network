@@ -40,6 +40,12 @@ services:
   - name: "More applications on another page!"
     icon: "fas fa-book"
     items:
+      - name: "Cable Management"
+        icon: "fas fa-network-wired"
+        subtitle: "Catalog"
+        tag: "IT"
+        url: "https://www.legrand.pt/media/catalogs/2023/"
+        target: "_blank" # optional html a tag target attribute
       - name: "Awesome app on a second page!"
         logo: "assets/tools/sample.png"
         subtitle: "Bookmark example"
