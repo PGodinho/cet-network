@@ -114,6 +114,12 @@ services:
         tag: "vscode"
         url: "https://vscode.dev/"
         target: "_blank" # optional html a tag target attribute
+      - name: "Microsoft Docs"
+        logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Microsoft_logo.svg/2048px-Microsoft_logo.svg.png"
+        subtitle: "MS Docs"
+        tag: "microsoft"
+        url: "https://learn.microsoft.com/en-us/"
+        target: "_blank" # optional html a tag target attribute
       - name: "Netlify"
         logo: "https://cdn.freebiesupply.com/logos/large/2x/netlify-logo-png-transparent.png"
         subtitle: "Connect everything. Build anything."
@@ -131,12 +137,6 @@ services:
         subtitle: "Foundation"
         tag: "raspberry pi"
         url: "https://www.raspberrypi.org"
-        target: "_blank" # optional html a tag target attribute
-      - name: "NetForce"
-        logo: "./assets/tools/netforce.png"
-        subtitle: "Formação e Certificação de Formadores e outros profissionais..."
-        tag: "netforce"
-        url: "https://netforce.iefp.pt"
         target: "_blank" # optional html a tag target attribute
   ##############################################################################################################
   - name: "Applications"

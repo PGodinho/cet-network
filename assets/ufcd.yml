@@ -58,3 +58,9 @@ services:
         tag: "app"
         url: "https://www.reddit.com/r/selfhosted/"
         target: "_blank"
+      - name: "NetForce"
+        logo: "./assets/tools/netforce.png"
+        subtitle: "Formação e Certificação de Formadores e outros profissionais..."
+        tag: "netforce"
+        url: "https://netforce.iefp.pt"
+        target: "_blank" # optional html a tag target attribute  
