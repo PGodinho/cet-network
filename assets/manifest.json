@@ -1,12 +1,12 @@
 {
-    "name": "CET-NETWORK dashboard",
+    "name": "DSI dashboard",
     "short_name": "CET-NETWORK",
     "start_url": "../",
     "display": "standalone",
     "background_color": "#ffffff",
     "lang": "en",
     "scope": "../",
-    "description": "CET Server Dashboard",
+    "description": "DSI Server Dashboard",
     "theme_color": "#3367D6",
     "icons": [
         {
