@@ -145,57 +145,5 @@ services:
         subtitle: "Networking Academy"
         tag: "cisco"
         url: "https://www.cisco.com/c/en/us/tech/index.html"
-        target: "_blank" # optional html a tag target attribute  
-      - name: "W3Schools"
-        logo: "https://upload.wikimedia.org/wikipedia/commons/a/a0/W3Schools_logo.svg"
-        subtitle: "Online Web Tutorials"
-        tag: "tutorials"
-        url: "https://www.w3schools.com/"
-        target: "_blank" # optional html a tag target attribute
-      - name: "Web Check"
-        logo: "https://cet-web-check.netlify.app/web-check.png"
-        subtitle: "Online Network Tools"
-        tag: "web-check"
-        url: "https://cet-web-check.netlify.app"
-        target: "_blank" # optional html a tag target attribute
-      - name: "Security Check List"
-        logo: "https://security-list.js.org/security-list-icon_white.png"
-        subtitle: "Online Security List"
-        tag: "web-check"
-        url: "https://security-list.js.org"
-        target: "_blank" # optional html a tag target attribute  
-####################################################################
-  - name: "interesting links"
-    icon: "fas fa-solid fa-arrow-up-right-from-square"
-    items:
-      - name: "SSH"
-        icon: "fas fa-terminal"
-        subtitle: "What is an SSH Client?"
-        tag: "ssh"
-        url: "https://www.ssh.com/academy/ssh/client"
-        target: "_blank" # optional html a tag target attribute
-      - name: "Workspace FrameWork !"
-        icon: "fa-solid fa-square-person-confined"
-        subtitle: "Ergonomic Clearances"
-        tag: "ergonomic"
-        url: "https://sustema.medium.com/ergonomic-clearances-for-control-room-82743f9fa1d6"
-        target: "_blank" # optional html a tag target attribute
-      - name: "r/selfhosted"
-        icon: "fa-brands fa-reddit-alien"
-        subtitle: "Bookmark example"
-        tag: "reddit"
-        url: "https://www.reddit.com/r/selfhosted/"
-        target: "_blank"
-      - name: "Awesome selfhosted"
-        icon: "fa-brands fa-github-alt"
-        subtitle: "Another application"
-        tag: "awesome-list"
-        url: "https://github.com/awesome-selfhosted/awesome-selfhosted"
-        target: "_blank" # optional html a tag target attribute
-      - name: "Buy me a coffee !"
-        subtitle: "If you want to support me, buy me a coffee "
-        tag: "tip me"
-        logo: "https://www.buymeacoffee.com/assets/img/guidelines/logo-mark-1.svg"
-        url: "https://www.buymeacoffee.com/"
-        target: "_blank" # optional html a tag target attribute
+        target: "_blank" # optional html a tag target attribute   
 ####################################################################
