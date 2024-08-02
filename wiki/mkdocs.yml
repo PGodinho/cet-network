@@ -8,6 +8,8 @@ theme:
   name: material
   logo: logo.svg
   favicon: logo.svg
+  extra:
+    homepage: https://cet-network.netlify.app/
   features:
     - navigation.instant
     - navigation.instant.prefetch
