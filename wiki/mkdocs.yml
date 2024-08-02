@@ -1,6 +1,6 @@
 ##################
 site_name: CET-Network
-site_url: https://cet-network.netlify.app
+site_url: https://cet-network.netlify.app/
 site_description: Documents
 
 ##################
@@ -99,7 +99,6 @@ markdown_extensions:
 #  Extra
 copyright: Copyright &copy; 2024 - PGodinho
 extra:
-  homepage: ../../index.html
   generator: true
   social:
     - icon: fontawesome/brands/square-github
