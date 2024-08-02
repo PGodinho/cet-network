@@ -56,11 +56,11 @@ links:
     url: "#"
   - name: "CET"
     icon: "fa-solid fa-building-flag"
-    url: ""
+    url: "#cet"
     ;target: "_blank" # optional html a tag target attribute
   - name: "Docs"
     icon: "fa-solid fa-book-skull"
-    url: "/site/index.html"
+    url: "wiki/site/index.html"
     ;target: "_blank" # optional html a tag target attribute  
   
   # this will link to a second homer page that will load config from additional-page.yml and keep default config values as in config.yml file

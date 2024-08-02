@@ -51,6 +51,9 @@ message:
 # Optional navbar
 # links: [] # Allows for navbar (dark mode, layout, and search) without any links
 links:
+  - name: "Home"
+    icon: "fas fa-solid fa-house"
+    url: "#"
   - name: "Referencial"
     icon: "fas fa-solid fa-house-user"
     url: "https://catalogo.anqep.gov.pt/qualificacoesDetalhe/46"

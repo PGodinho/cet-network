@@ -1,0 +1,112 @@
+##################
+site_name: CET-Network
+site_url: https://cet-network.netlify.app
+site_description: Documents
+
+##################
+theme:
+  name: material
+  logo: logo.svg
+  favicon: logo.svg
+  features:
+    - navigation.instant
+    - navigation.instant.prefetch
+    - navigation.instant.progress
+    - navigation.instant.preview
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.expand
+    - navigation.sections
+    - navigation.path
+    - navigation.indexes
+    - navigation.footer
+    - search.suggest
+    - search.highlight
+    - search.share
+    - content.code.copy
+    - content.code.select
+  icon:
+    previous: fontawesome/solid/angle-left
+    next: fontawesome/solid/angle-right
+  font:
+    text: Roboto
+  palette:
+  # Palette toggle for dark mode
+    - scheme: slate
+      primary: black
+      accent: deep purple
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  # Palette toggle for light mode
+    - scheme: default
+      primary: grey
+      accent: blue grey
+      toggle:
+        icon: material/brightness-7 
+        name: Switch to dark mode
+
+# Plugins
+plugins:
+  - search
+  - open-in-new-tab
+  - drawio
+  #- drawio_file
+  - drawio-exporter
+
+
+# Extensions
+markdown_extensions:
+  - abbr
+  - admonition
+  - attr_list
+  - def_list
+  - tables
+  - footnotes
+  - md_in_html
+  - toc:
+      permalink: true
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.details
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - pymdownx.magiclink:
+      normalize_issue_symbols: true
+      repo_url_shorthand: true
+      user: squidfunk
+      repo: mkdocs-material
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.snippets:
+      auto_append:
+        - includes/mkdocs.md
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+  - pymdownx.superfences
+
+#  Extra
+copyright: Copyright &copy; 2024 - PGodinho
+extra:
+  generator: true
+  social:
+    - icon: fontawesome/brands/square-github
+      link: https://github.com/PGodinho
+      name: PGodinho @github
+    - icon: fontawesome/brands/linkedin
+      link: https://pt.linkedin.com/
+      name: LinkedIn
+    - icon: fontawesome/solid/house-flag
+      link: https://localhost/
+      name: LinkedIn      
