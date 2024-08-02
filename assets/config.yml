@@ -3,12 +3,12 @@
 # See https://fontawesome.com/v5/search for icons options
 
 title: "CET-NETWORK"
-subtitle: "Systems & Network Administration"
-logo: "logo.svg"
-# icon: "fas fa-skull-crossbones" # Optional icon
+subtitle: "IT-Tools"
+logo: "image/logo.svg"
+#icon: "fas fa-solid fa-ethernet" # Optional icon
 
 header: true
-footer: '<p>Created with <span class="has-text-danger">❤️</span> with <a href="https://bulma.io/">bulma</a>, <a href="https://vuejs.org/">vuejs</a> & <a href="https://fontawesome.com/">font awesome</a> // Fork me on <a href="https://github.com/bastienwirtz/homer"><i class="fab fa-github-alt"></i></a></p>' # set false if you want to hide it.
+footer: '<p>Criado com o auxílio de: <a href="https://bulma.io/">bulma</a>, <a href="https://vuejs.org/">vuejs</a> & <a href="https://fontawesome.com/">font awesome</a></p>' # set false if you want to hide it.
 
 # Optional theme customization
 theme: default
@@ -51,50 +51,18 @@ message:
 # Optional navbar
 # links: [] # Allows for navbar (dark mode, layout, and search) without any links
 links:
-  - name: "Referencial"
-    icon: "fas fa-solid fa-house-user"
-    url: "https://catalogo.anqep.gov.pt/qualificacoesDetalhe/46"
-    target: "_blank" # optional html a tag target attribute
-  - name: "Cockpit"
-    icon: "fas fa-gear fa-spin fa-spin-reverse"
-    url: "https://cockpit-project.org"
-    target: "_blank" # optional html a tag target attribute
-  - name: "Webmin"
-    icon: "fas fa-solid fa-user-gear"
-    url: "https://webmin.com"
-    target: "_blank" # optional html a tag target attribute
-  - name: "Router"
-    icon: "fas fa-network-wired"
-    url: "https://www.routerpasswords.com"
-    target: "_blank" # optional html a tag target attribute
-  - name: "Printer"
-    icon: "fa fa-print"
-    url: "https://www.cups.org"
-    target: "_blank" # optional html a tag target attribute
-  - name: "Scanner"
-    icon: "fas fa-barcode"
-    url: "https://github.com/sbs20/scanserv"
-    target: "_blank" # optional html a tag target attribute
-  - name: "GitHub"
-    icon: "fab fa-github"
-    url: "https://github.com/"
-    target: "_blank" # optional html a tag target attribute
-  - name: "Wiki-This"
-    icon: "fa-brands fa-github-square fa-xl"
-    url: "https://github.com/PGodinho/cet-network/wiki"
-    target: "_blank" # optional html a tag target attribute
-  - name: "Wiki"
-    icon: "fas fa-book"
-    url: "https://wikipedia.org/"
-    target: "_blank" # optional html a tag target attribute
-  - name: "Contribute"
-    icon: "fab fa-github"
-    url: "https://github.com/bastienwirtz/homer"
-    target: "_blank" # optional html a tag target attribute
-  - name: "UFCD"
-    icon: "fas fa-book"
-    url: "#ufcd"
-
+  - name: "Home"
+    icon: "fas fa-solid fa-house"
+    url: "#"
+  - name: "CET"
+    icon: "fa-solid fa-building-flag"
+    url: "#cet"
+    ;target: "_blank" # optional html a tag target attribute
+  - name: "Docs"
+    icon: "fa-solid fa-book-skull"
+    url: "/site/index.html"
+    ;target: "_blank" # optional html a tag target attribute  
+  
   # this will link to a second homer page that will load config from additional-page.yml and keep default config values as in config.yml file
   # see url field and assets/additional-page.yml.dist used in this example:
   #- name: "another page!"
@@ -105,105 +73,80 @@ links:
 # First level array represent a group.
 # Leave only a "items" key if not using group (group name, icon & tagstyle are optional, section separation will not be displayed).
 services:
-  - name: "Tools"
-    icon: "fa-solid fa-screwdriver-wrench"
+  - name: "Log ON"
+    icon: "fa-solid fa-user-gear"
     items:
       - name: "VSCode"
         logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Visual_Studio_Code_1.35_icon.svg/2048px-Visual_Studio_Code_1.35_icon.svg.png"
         subtitle: "Live Coding"
         tag: "vscode"
         url: "https://vscode.dev/"
+        target: "_blank" # optional html a tag target attribute   
+      - name: "Azure"
+        logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Microsoft_Azure.svg/2048px-Microsoft_Azure.svg.png"
+        subtitle: "Cloud Computing"
+        tag: "azure"
+        url: "https://portal.azure.com/"  
         target: "_blank" # optional html a tag target attribute
-      - name: "Netlify"
-        logo: "https://cdn.freebiesupply.com/logos/large/2x/netlify-logo-png-transparent.png"
-        subtitle: "Connect everything. Build anything."
-        tag: "netlify"
-        url: "https://www.netlify.com/"
+      - name: "CISCO"
+        logo: "./assets/tools/cisco.svg"
+        subtitle: "ID"
+        tag: "cisco"
+        url: "https://id.cisco.com/"
+        target: "_blank" # optional html a tag target attribute      
+####################################################################        
+  - name: "Tools"
+    icon: "fa-solid fa-screwdriver-wrench"
+    items:        
+      - name: "Help Desk"
+        logo: "./assets/tools/help-desk-service.png"
+        subtitle: "Help Desk"
+        tag: "help"
+        url: "#help_desk" 
+      - name: "VSCode"
+        logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Visual_Studio_Code_1.35_icon.svg/2048px-Visual_Studio_Code_1.35_icon.svg.png"
+        subtitle: "Ambiente Integrado de Desenvolvimento"
+        tag: "vscode"
+        url: "https://code.visualstudio.com/"
         target: "_blank" # optional html a tag target attribute
-      - name: "NethServer"
-        logo: "./assets/tools/nethserver.png"
-        subtitle: "For small offices and medium enterprises."
-        tag: "gateway"
-        url: "https://www.nethserver.org"
+      - name: "Draw.io"
+        logo: "assets/tools/drawio_logo.png"
+        subtitle: "Diagramas"
+        tag: "gráficos"
+        url: "https://www.drawio.com/"
         target: "_blank" # optional html a tag target attribute
-      - name: "RaspberryPi"
-        logo: "./assets/tools/raspberry-pi-foundation-vector-logo.svg"
-        subtitle: "Foundation"
-        tag: "raspberry pi"
-        url: "https://www.raspberrypi.org"
-        target: "_blank" # optional html a tag target attribute
-      - name: "NetForce"
-        logo: "./assets/tools/netforce.png"
-        subtitle: "Formação e Certificação de Formadores e outros profissionais..."
-        tag: "netforce"
-        url: "https://netforce.iefp.pt"
-        target: "_blank" # optional html a tag target attribute
-  ##############################################################################################################
-  - name: "Applications"
-    icon: "fas fa-cloud"
+      - name: "Docs"
+        logo: "assets/tools/Markdown-mark.svg"
+        subtitle: "MKDocs"
+        tag: "markdown"
+        url: "https://www.mkdocs.org/"
+        target: "_blank" # optional html a tag target attribute             
+####################################################################
+  - name: "Manual"
+    icon: "fas fa-book"
     items:
-      - name: "Office"
-        logo: "https://upload.wikimedia.org/wikipedia/commons/0/0e/Microsoft_365_%282022%29.svg"
-        subtitle: "Microsoft Office"
-        tag: "office"
-        url: "https://www.office.com/?auth=2"
+      - name: "Microsoft WSL"
+        logo: "./assets/tools/microsoft_logo_wsl.png"
+        subtitle: "WSL"
+        tag: "microsoft"
+        url: "https://learn.microsoft.com/en-us/windows/wsl/"
         target: "_blank" # optional html a tag target attribute
+      - name: "Microsoft VM"
+        logo: "./assets/tools/microsoft_logo_docs.png"
+        subtitle: "Hyper-V"
+        tag: "microsoft"
+        url: "https://learn.microsoft.com/en-us/virtualization/?source=docs"
+        target: "_blank" # optional html a tag target attribute  
       - name: "Cisco"
         logo: "./assets/tools/cisco.svg"
-        subtitle: "Networking Academy"
+        subtitle: "Networking Technologies and Protocols"
         tag: "cisco"
-        url: "https://www.netacad.com/"
-        target: "_blank" # optional html a tag target attribute
-      - name: "W3Schools"
-        logo: "https://upload.wikimedia.org/wikipedia/commons/a/a0/W3Schools_logo.svg"
-        subtitle: "Online Web Tutorials"
-        tag: "tutorials"
-        url: "https://www.w3schools.com/"
-        target: "_blank" # optional html a tag target attribute
-      - name: "Web Check"
-        logo: "https://cet-web-check.netlify.app/web-check.png"
-        subtitle: "Online Network Tools"
-        tag: "web-check"
-        url: "https://cet-web-check.netlify.app"
-        target: "_blank" # optional html a tag target attribute
-      - name: "Security Check List"
-        logo: "https://security-list.js.org/security-list-icon_white.png"
-        subtitle: "Online Security List"
-        tag: "web-check"
-        url: "https://security-list.js.org"
-        target: "_blank" # optional html a tag target attribute  
-  ###################################################################
-  - name: "interesting links"
-    icon: "fas fa-solid fa-arrow-up-right-from-square"
-    items:
-      - name: "SSH"
-        icon: "fas fa-terminal"
-        subtitle: "What is an SSH Client?"
-        tag: "ssh"
-        url: "https://www.ssh.com/academy/ssh/client"
-        target: "_blank" # optional html a tag target attribute
-      - name: "Workspace FrameWork !"
-        icon: "fa-solid fa-square-person-confined"
-        subtitle: "Ergonomic Clearances"
-        tag: "ergonomic"
-        url: "https://sustema.medium.com/ergonomic-clearances-for-control-room-82743f9fa1d6"
-        target: "_blank" # optional html a tag target attribute
-      - name: "r/selfhosted"
-        icon: "fa-brands fa-reddit-alien"
-        subtitle: "Bookmark example"
-        tag: "reddit"
-        url: "https://www.reddit.com/r/selfhosted/"
-        target: "_blank"
-      - name: "Awesome selfhosted"
-        icon: "fa-brands fa-github-alt"
-        subtitle: "Another application"
-        tag: "awesome-list"
-        url: "https://github.com/awesome-selfhosted/awesome-selfhosted"
-        target: "_blank" # optional html a tag target attribute
-      - name: "Buy me a coffee !"
-        subtitle: "If you want to support me, buy me a coffee "
-        tag: "tip me"
-        logo: "https://www.buymeacoffee.com/assets/img/guidelines/logo-mark-1.svg"
-        url: "https://www.buymeacoffee.com/"
-        target: "_blank" # optional html a tag target attribute
-###################################################################
+        url: "https://www.cisco.com/c/en/us/tech/index.html"
+        target: "_blank" # optional html a tag target attribute 
+      - name: "Red Hat"
+        logo: "./assets/tools/red_hat_logo.svg"
+        subtitle: "Networking Guide"
+        tag: "redhat"
+        url: "https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/7/html/networking_guide/index"
+        target: "_blank" # optional html a tag target attribute         
+####################################################################

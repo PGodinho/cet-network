@@ -1,0 +1,3063 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://cet-network.netlify.app/CET-Docs/Cisco/CET-Packet-Tracer-IOS/">
+      
+      
+        <link rel="prev" href="../../OSI/">
+      
+      
+        <link rel="next" href="../Frame-Relay/">
+      
+      
+      <link rel="icon" href="../../../logo.svg">
+      <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.21">
+    
+    
+      
+        <title>CISCO IOS - CET-Network</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.66ac8b77.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#cisco-ios" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../.." title="CET-Network" class="md-header__button md-logo" aria-label="CET-Network" data-md-component="logo">
+      
+  <img src="../../../logo.svg" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            CET-Network
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              CISCO IOS
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Share" aria-label="Share" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7 0-.24-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91 1.61 0 2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08Z"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../.." class="md-tabs__link">
+        
+  
+    
+  
+  Welcome to MkDocs
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../Audio/Audio/" class="md-tabs__link">
+          
+  
+    
+  
+  Audio
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../../CMD/" class="md-tabs__link">
+          
+  
+    
+  
+  CET Docs
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../Homer/configuration/" class="md-tabs__link">
+          
+  
+    
+  
+  Homer
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="CET-Network" class="md-nav__button md-logo" aria-label="CET-Network" data-md-component="logo">
+      
+  <img src="../../../logo.svg" alt="logo">
+
+    </a>
+    CET-Network
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Welcome to MkDocs
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Audio
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Audio
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Audio/Audio/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Audio
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    CET Docs
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            CET Docs
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../CMD/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    CMD
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../OS/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    OS - Operating System
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../OSI/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    OSI - MODEL
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_4" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3_4" id="__nav_3_4_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Cisco
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3_4">
+            <span class="md-nav__icon md-icon"></span>
+            Cisco
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    CISCO IOS
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    CISCO IOS
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#vsc-cisco-ios-syntax" class="md-nav__link">
+    <span class="md-ellipsis">
+      VSC Cisco IOS Syntax
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="VSC Cisco IOS Syntax">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#cisco-interface-name-format" class="md-nav__link">
+    <span class="md-ellipsis">
+      Cisco Interface name Format
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#meraki" class="md-nav__link">
+    <span class="md-ellipsis">
+      Meraki
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#router-network" class="md-nav__link">
+    <span class="md-ellipsis">
+      Router Network
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#admin-accesss" class="md-nav__link">
+    <span class="md-ellipsis">
+      ADMIN Accesss
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="ADMIN Accesss">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#name" class="md-nav__link">
+    <span class="md-ellipsis">
+      NAME
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#save-settings" class="md-nav__link">
+    <span class="md-ellipsis">
+      Save Settings
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#banner" class="md-nav__link">
+    <span class="md-ellipsis">
+      Banner
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Banner">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#mensagem" class="md-nav__link">
+    <span class="md-ellipsis">
+      Mensagem
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#seguranca" class="md-nav__link">
+    <span class="md-ellipsis">
+      Segurança
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Segurança">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#administrador" class="md-nav__link">
+    <span class="md-ellipsis">
+      Administrador
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Administrador">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#enable-password-enable-secret" class="md-nav__link">
+    <span class="md-ellipsis">
+      Enable Password / Enable Secret
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#consola" class="md-nav__link">
+    <span class="md-ellipsis">
+      Consola
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#portifconfig" class="md-nav__link">
+    <span class="md-ellipsis">
+      PORT/IF/CONFIG
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#rip-routing-information-protocol" class="md-nav__link">
+    <span class="md-ellipsis">
+      RIP ( Routing Information Protocol )
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="RIP ( Routing Information Protocol )">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#how-to-configure-rip-on-a-cisco-router" class="md-nav__link">
+    <span class="md-ellipsis">
+      How to configure RIP on a Cisco router
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#debug" class="md-nav__link">
+    <span class="md-ellipsis">
+      Debug
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#telnet" class="md-nav__link">
+    <span class="md-ellipsis">
+      Telnet
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ssh-config" class="md-nav__link">
+    <span class="md-ellipsis">
+      SSH Config
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#vlan" class="md-nav__link">
+    <span class="md-ellipsis">
+      VLAN
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="VLAN">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#cofigurar-vlans" class="md-nav__link">
+    <span class="md-ellipsis">
+      Cofigurar VLANs
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#configuring-a-lan-with-dhcp-and-vlans" class="md-nav__link">
+    <span class="md-ellipsis">
+      Configuring a LAN with DHCP and VLANs
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Configuring a LAN with DHCP and VLANs">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#creating-and-assigning-vlans" class="md-nav__link">
+    <span class="md-ellipsis">
+      Creating and assigning VLANs
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#configuring-trunk-port" class="md-nav__link">
+    <span class="md-ellipsis">
+      Configuring trunk port
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#configuring-dhcp-server-and-creating-dhcp-pools" class="md-nav__link">
+    <span class="md-ellipsis">
+      Configuring DHCP server and creating DHCP pools
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#assigning-ip-addresses-to-vlans" class="md-nav__link">
+    <span class="md-ellipsis">
+      Assigning IP addresses to VLANs
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#configuring-the-routers-interface" class="md-nav__link">
+    <span class="md-ellipsis">
+      Configuring the router's interface
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#voip" class="md-nav__link">
+    <span class="md-ellipsis">
+      VOIP
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="VOIP">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#packet-tracer-811-tutorial-ip-telephony-basic-configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      Packet Tracer 8.1.1 tutorial - IP telephony basic configuration
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#router-config" class="md-nav__link">
+    <span class="md-ellipsis">
+      Router Config
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#phone-config" class="md-nav__link">
+    <span class="md-ellipsis">
+      Phone Config
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#switch-config" class="md-nav__link">
+    <span class="md-ellipsis">
+      Switch config
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tcpip" class="md-nav__link">
+    <span class="md-ellipsis">
+      TCP/IP
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#transmission-control-protocol" class="md-nav__link">
+    <span class="md-ellipsis">
+      Transmission Control Protocol
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#internet-protocol" class="md-nav__link">
+    <span class="md-ellipsis">
+      Internet Protocol
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dhcp" class="md-nav__link">
+    <span class="md-ellipsis">
+      DHCP
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dynamic-host-configuration-protocol" class="md-nav__link">
+    <span class="md-ellipsis">
+      Dynamic Host Configuration Protocol
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ntp" class="md-nav__link">
+    <span class="md-ellipsis">
+      NTP
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#set-clock-rate-on-router-serial-interface" class="md-nav__link">
+    <span class="md-ellipsis">
+      Set Clock Rate on Router Serial Interface
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dte-data-terminating-equipment" class="md-nav__link">
+    <span class="md-ellipsis">
+      DTE (Data Terminating Equipment)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dce-data-circuit-terminating-equipment" class="md-nav__link">
+    <span class="md-ellipsis">
+      DCE (Data Circuit Terminating Equipment)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#nat" class="md-nav__link">
+    <span class="md-ellipsis">
+      NAT
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#network-address-translation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Network address translation
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#arp" class="md-nav__link">
+    <span class="md-ellipsis">
+      ARP
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#address-resolution-protocol" class="md-nav__link">
+    <span class="md-ellipsis">
+      Address Resolution Protocol
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#firewall-router" class="md-nav__link">
+    <span class="md-ellipsis">
+      FireWall - Router
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#frame-relay" class="md-nav__link">
+    <span class="md-ellipsis">
+      Frame Relay
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Frame-Relay/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Frame Relay
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../VLAN/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    VLAN
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Voip/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    VOIP
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_5" id="__nav_3_5_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Linux
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_5">
+            <span class="md-nav__icon md-icon"></span>
+            Linux
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Linux/AD-DC/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    AD-DC - Active Directory Domain Controller
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Linux/Apache/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    APACHE.ORG
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Linux/CET-Linux/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    LINUX
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Linux/Cockpit/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Cockpit
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Linux/DHCP/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    DHCP - Dynamic Host Configuration Protocol
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Linux/DNS/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    DNS - Domain Name System
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Linux/Firewall/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    FIREWALL
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Linux/FreeIPA/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    FreeIPA - Identity, Policy, Audit
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Linux/NTP/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    NTP
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Linux/SAMBA/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    SAMBA.ORG
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Linux/SNMP/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    SNMP - Simple Network Management Protocol
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_6" id="__nav_3_6_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Network
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_6">
+            <span class="md-nav__icon md-icon"></span>
+            Network
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Network/Cables/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Norma 568
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Network/Network/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Network
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_7" id="__nav_3_7_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Security
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_7">
+            <span class="md-nav__icon md-icon"></span>
+            Security
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Security/CyberSecurity/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    CyberSecurity
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3_8" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_8" id="__nav_3_8_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Sys Admin
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_8">
+            <span class="md-nav__icon md-icon"></span>
+            Sys Admin
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Sys%20Admin/A%20SysAdmin-resources/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Awesome Sysadmin
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Sys%20Admin/Users%20%26%20Groups/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Users &amp; Groups
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3_9" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../image/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Image
+  </span>
+  
+
+            </a>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_9_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_9">
+            <span class="md-nav__icon md-icon"></span>
+            Image
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Homer
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Homer
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Homer/configuration/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Configuration
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Homer/customservices/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Custom Services
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Homer/development/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Development
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Homer/tips-and-tricks/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Tips &amp; Tricks
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../Homer/troubleshooting/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Troubleshooting
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#vsc-cisco-ios-syntax" class="md-nav__link">
+    <span class="md-ellipsis">
+      VSC Cisco IOS Syntax
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="VSC Cisco IOS Syntax">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#cisco-interface-name-format" class="md-nav__link">
+    <span class="md-ellipsis">
+      Cisco Interface name Format
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#meraki" class="md-nav__link">
+    <span class="md-ellipsis">
+      Meraki
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#router-network" class="md-nav__link">
+    <span class="md-ellipsis">
+      Router Network
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#admin-accesss" class="md-nav__link">
+    <span class="md-ellipsis">
+      ADMIN Accesss
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="ADMIN Accesss">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#name" class="md-nav__link">
+    <span class="md-ellipsis">
+      NAME
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#save-settings" class="md-nav__link">
+    <span class="md-ellipsis">
+      Save Settings
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#banner" class="md-nav__link">
+    <span class="md-ellipsis">
+      Banner
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Banner">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#mensagem" class="md-nav__link">
+    <span class="md-ellipsis">
+      Mensagem
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#seguranca" class="md-nav__link">
+    <span class="md-ellipsis">
+      Segurança
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Segurança">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#administrador" class="md-nav__link">
+    <span class="md-ellipsis">
+      Administrador
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Administrador">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#enable-password-enable-secret" class="md-nav__link">
+    <span class="md-ellipsis">
+      Enable Password / Enable Secret
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#consola" class="md-nav__link">
+    <span class="md-ellipsis">
+      Consola
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#portifconfig" class="md-nav__link">
+    <span class="md-ellipsis">
+      PORT/IF/CONFIG
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#rip-routing-information-protocol" class="md-nav__link">
+    <span class="md-ellipsis">
+      RIP ( Routing Information Protocol )
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="RIP ( Routing Information Protocol )">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#how-to-configure-rip-on-a-cisco-router" class="md-nav__link">
+    <span class="md-ellipsis">
+      How to configure RIP on a Cisco router
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#debug" class="md-nav__link">
+    <span class="md-ellipsis">
+      Debug
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#telnet" class="md-nav__link">
+    <span class="md-ellipsis">
+      Telnet
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ssh-config" class="md-nav__link">
+    <span class="md-ellipsis">
+      SSH Config
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#vlan" class="md-nav__link">
+    <span class="md-ellipsis">
+      VLAN
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="VLAN">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#cofigurar-vlans" class="md-nav__link">
+    <span class="md-ellipsis">
+      Cofigurar VLANs
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#configuring-a-lan-with-dhcp-and-vlans" class="md-nav__link">
+    <span class="md-ellipsis">
+      Configuring a LAN with DHCP and VLANs
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Configuring a LAN with DHCP and VLANs">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#creating-and-assigning-vlans" class="md-nav__link">
+    <span class="md-ellipsis">
+      Creating and assigning VLANs
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#configuring-trunk-port" class="md-nav__link">
+    <span class="md-ellipsis">
+      Configuring trunk port
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#configuring-dhcp-server-and-creating-dhcp-pools" class="md-nav__link">
+    <span class="md-ellipsis">
+      Configuring DHCP server and creating DHCP pools
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#assigning-ip-addresses-to-vlans" class="md-nav__link">
+    <span class="md-ellipsis">
+      Assigning IP addresses to VLANs
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#configuring-the-routers-interface" class="md-nav__link">
+    <span class="md-ellipsis">
+      Configuring the router's interface
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#voip" class="md-nav__link">
+    <span class="md-ellipsis">
+      VOIP
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="VOIP">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#packet-tracer-811-tutorial-ip-telephony-basic-configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      Packet Tracer 8.1.1 tutorial - IP telephony basic configuration
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#router-config" class="md-nav__link">
+    <span class="md-ellipsis">
+      Router Config
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#phone-config" class="md-nav__link">
+    <span class="md-ellipsis">
+      Phone Config
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#switch-config" class="md-nav__link">
+    <span class="md-ellipsis">
+      Switch config
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tcpip" class="md-nav__link">
+    <span class="md-ellipsis">
+      TCP/IP
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#transmission-control-protocol" class="md-nav__link">
+    <span class="md-ellipsis">
+      Transmission Control Protocol
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#internet-protocol" class="md-nav__link">
+    <span class="md-ellipsis">
+      Internet Protocol
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dhcp" class="md-nav__link">
+    <span class="md-ellipsis">
+      DHCP
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dynamic-host-configuration-protocol" class="md-nav__link">
+    <span class="md-ellipsis">
+      Dynamic Host Configuration Protocol
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ntp" class="md-nav__link">
+    <span class="md-ellipsis">
+      NTP
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#set-clock-rate-on-router-serial-interface" class="md-nav__link">
+    <span class="md-ellipsis">
+      Set Clock Rate on Router Serial Interface
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dte-data-terminating-equipment" class="md-nav__link">
+    <span class="md-ellipsis">
+      DTE (Data Terminating Equipment)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dce-data-circuit-terminating-equipment" class="md-nav__link">
+    <span class="md-ellipsis">
+      DCE (Data Circuit Terminating Equipment)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#nat" class="md-nav__link">
+    <span class="md-ellipsis">
+      NAT
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#network-address-translation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Network address translation
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#arp" class="md-nav__link">
+    <span class="md-ellipsis">
+      ARP
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#address-resolution-protocol" class="md-nav__link">
+    <span class="md-ellipsis">
+      Address Resolution Protocol
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#firewall-router" class="md-nav__link">
+    <span class="md-ellipsis">
+      FireWall - Router
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#frame-relay" class="md-nav__link">
+    <span class="md-ellipsis">
+      Frame Relay
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="cisco-ios"><a href="https://www.cisco.com/c/en/us/td/docs/ios-xml/ios/fundamentals/configuration/15mt/fundamentals-15-mt-book/cf-cli-basics.html">CISCO IOS</a></h1>
+<h2 id="vsc-cisco-ios-syntax"><a href="https://marketplace.visualstudio.com/items?itemName=jamiewoodio.cisco">VSC Cisco IOS Syntax</a></h2>
+<p><strong><code>enable</code></strong> :- This command is used to enter in privileged exec mode.</p>
+<p><strong><code>configure terminal</code></strong> :- This command is used to enter in global configuration mode.</p>
+<p><strong><code>interface serial 0/0/0</code></strong> :- This command is used to enter in interface mode.</p>
+<h3 id="cisco-interface-name-format"><a href="https://www.cisco.com/assets/sol/sb/Switches_Emulators_v2_3_5_xx/help/350_550/index.html#page/tesla_350_550_olh/ts_getting_started_01_22.html">Cisco Interface name Format</a></h3>
+<p><code>&lt;interface-type&gt; &lt;slot&gt; / &lt;port&gt;</code></p>
+<table>
+<thead>
+<tr>
+<th>Interface</th>
+<th><code>&lt;interface-type&gt;</code></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Ethernet</td>
+<td>Ethernet</td>
+</tr>
+<tr>
+<td>FastEthernet</td>
+<td>FastEthernet</td>
+</tr>
+<tr>
+<td>GigabitEthernet</td>
+<td>GigabitEthernet</td>
+</tr>
+<tr>
+<td>10GigabitEthernet</td>
+<td>TenGigabitEthernet</td>
+</tr>
+<tr>
+<td>Serial</td>
+<td>Serial</td>
+</tr>
+<tr>
+<td>ISDN BRI</td>
+<td>BRI</td>
+</tr>
+</tbody>
+</table>
+<h2 id="meraki"><a href="https://documentation.meraki.com/">Meraki</a></h2>
+<h2 id="router-network"><a href="https://router-network.com/">Router Network</a></h2>
+<pre><code class="language-shell">Router&gt;enable
+</code></pre>
+<h2 id="admin-accesss">ADMIN Accesss</h2>
+<p>Acesso administrativo</p>
+<pre><code class="language-shell">Router&gt;enable
+Router&gt;reload startup-config
+Router#configure terminal
+Router(config)#
+</code></pre>
+<h3 id="name">NAME</h3>
+<p>Nome</p>
+<pre><code class="language-shell">Router(config)#hostname nameDoHost
+</code></pre>
+<h3 id="save-settings">Save Settings</h3>
+<pre><code class="language-shell">Router#
+Router#show running-config
+Router#show startup-config
+Router#copy running-config startup-config
+Router#end
+Router#write
+</code></pre>
+<h3 id="banner"><a href="https://networklessons.com/cisco/ccie-routing-switching/how-to-configure-cisco-ios-banners">Banner</a></h3>
+<h4 id="mensagem">Mensagem</h4>
+<pre><code class="language-shell">Router(config)#banner motd #mensagem# [ex: Acesso reservado a utilizadores autorizados]
+Router(config)#interface FastEthernet0/1
+Router(config-if)#description #####
+Router(config-if)#end
+Router#show interfaces
+</code></pre>
+<h3 id="seguranca">Segurança</h3>
+<h4 id="administrador">Administrador</h4>
+<pre><code class="language-shell">Router(config)#enable secret Passw0rd.
+Router(config)#exit
+</code></pre>
+<h5 id="enable-password-enable-secret"><a href="https://community.cisco.com/t5/network-security/enable-password-and-enable-secret/td-p/1931118">Enable Password / Enable Secret</a></h5>
+<blockquote>
+<p><strong>#enable password</strong> - it will enables a password that based on a <strong>clear text.</strong></p>
+<p>These passwords were stored as clear-text in the configuration, and could be read by anyone calling  <strong>show running-config</strong> .</p>
+<p>Cisco then implemented <strong>service password-encryption</strong> to store these passwords as a different combination of characters using an algorithm. These are the passwords of type "7". This was still insecure: Googling "cisco password decryption" will yield websites that will decrypt type 7 passwords.</p>
+<p><strong># enable secret -</strong> it will enables a password and <strong>password encryption</strong> that based on the <strong>md5</strong> hashing algorithm. This is is a most recommended command to supply while enabling a password to any cisco network devices.</p>
+<p>Finally, Cisco came up with <strong>enable secret</strong> which hashes the passwords with an MD5 algorithm. The only way to find the original passwords would be through the use of a rainbow table, and even that is unlikely as more than two character strings may return the same MD5 hash.</p>
+</blockquote>
+<h4 id="consola">Consola</h4>
+<pre><code class="language-shell">Router#configure terminal
+Router(config)#
+Router(config)#line console 0
+Router(config-line)#password Passw0rd. (consola)
+Router(config-line)#logging synchronous
+Router(config-line)#history size 0
+Router(config-line)#exit
+Router(config)#
+Router(config)#service password-encryption
+</code></pre>
+<hr />
+<h2 id="portifconfig">PORT/IF/CONFIG</h2>
+<p>Configuração de Portas</p>
+<pre><code class="language-shell">Router#configure terminal
+Router(config)#
+Router(config)#interface g0/0
+Router(config-if)#
+Router(config-if)#ip address 192.168.1.254 255.255.255.0 #--&gt;Depende da arquitetura de rede
+Router(config-if)#no shutdown
+Router(config-if)# exit
+Router(config)#interface g0/1
+Router(config-it)#
+Router(config-it)#ip address 10.10.10.254 255.255.255.0 #--&gt;Depende da arquitetura de rede
+Router(config-it)#no shutdown
+Router(config-it)#exit
+Router#
+</code></pre>
+<hr />
+<h2 id="rip-routing-information-protocol"><a href="https://en.wikipedia.org/wiki/Routing_Information_Protocol">RIP</a> ( <em>Routing Information Protocol</em> )</h2>
+<p>Padrão para troca de informações entre os <em><a href="https://pt.wikipedia.org/wiki/Gateway" title="Gateway">gateways</a></em> e <em><a href="https://pt.wikipedia.org/wiki/Host" title="Host">hosts</a></em>.</p>
+<p>Projetado para redes com tamanho moderado, que utilizam uma tecnologia razoavelmente homogénea</p>
+<p>RIP2, é uma evolução do RIP, e destina-se a expandir a quantidade de informação útil carregada nos pacotes e também adicionar uma medida de segurança.</p>
+<h3 id="how-to-configure-rip-on-a-cisco-router"><a href="https://networklessons.com/rip/how-to-configure-rip-on-a-cisco-router">How to configure RIP on a Cisco router</a></h3>
+<pre><code class="language-shell">Router(config)#router rip
+Router(config)#version 2
+Router(config)#network 192.168.1.0 #rede 1 // no network --&gt; erase
+Router(config)#network 145.23.23.0 #rede 2
+</code></pre>
+<h3 id="debug"><a href="https://study-ccna.com/debug-command/">Debug</a></h3>
+<pre><code class="language-shell">Router#debug ip rip [debug ip icmp] [debug all]
+Router#no debug ip rip
+</code></pre>
+<hr />
+<h2 id="telnet"><a href="https://en.wikipedia.org/wiki/Telnet">Telnet</a></h2>
+<pre><code class="language-shell">Router-&gt;enable
+Router-&gt;configure terminal
+Router(config)#line vty 0 15 #abre 16 ligações
+Router(config)#line vty
+Router(config-line)#password telnet
+Router(config-line)#logging synchronous
+Router(config-line)#history size 15
+Router(config-line)#exec-timeout 120 #segundos
+Router(config-line)#exit
+</code></pre>
+<h2 id="ssh-config">SSH Config</h2>
+<pre><code class="language-shell">Router&gt;
+Router&gt;enable
+Router#configure terminal
+Router(config)#hostname RT-FSociety
+Router(config)#ip domain-name fsociety.net
+Router(config)#crypto key generate rsa
+Router(config)#ip ssh time-out 60 (segundos)
+Router(config)#ip ssh authentication-retries 2
+Router(config)#username admin privilege 15 secret cisco
+Router(config)#line vty 0 15
+Router(config-line)#login local
+Router(config-line)#transport input ssh
+Router(config-line)#exit
+Router(config)#exit
+Router#copy running-config startup-config
+Router#show running-config
+Router#exit
+</code></pre>
+<h2 id="vlan"><a href="https://pt.wikipedia.org/wiki/Virtual_LAN">VLAN</a></h2>
+<h3 id="cofigurar-vlans"><a href="https://www.cisco.com/c/en/us/td/docs/switches/datacenter/sw/5_x/nx-os/layer2/configuration/guide/Cisco_Nexus_7000_Series_NX-OS_Layer_2_Switching_Configuration_Guide_Release_5-x_chapter4.html">Cofigurar VLANs</a></h3>
+<hr />
+<pre><code class="language-shell">Switch(config)#interface vlan [vlan name or number]
+Switch(config-if)#ip address [ip address] [subnet mask]
+</code></pre>
+<p>EG:</p>
+<pre><code class="language-bash">Switch&gt;enable
+Switch&gt;configure terminal
+Switch(config)#interface vlan 1
+Switch(config)#ip address 192.168.1.100 255.255.255.0
+Switch(config)#no shutdown
+Switch(config)#ip default-gateway ##.##.##.##
+Switch(config)#show vlan
+Switch#configure terminal
+Switch(config)#interface f0/1
+Switch(config-if)#switchport mode access
+Switch(config-if)#switchport access vlan 10
+Switch(config-if)#exit
+Switch(config)#interface range f0/11-14
+Switch(config-if-range)#switchport mode access
+Switch(config-if-range)#switchport access vlan 20
+Switch(config-if-range)#exit
+Switch(config-if)#switchport mode trunk
+Switch(config-if)#switchport trunk allowed vlan 20 [,30,40]
+</code></pre>
+<h2 id="configuring-a-lan-with-dhcp-and-vlans"><a href="https://www.cisco.com/en/US/docs/routers/access/800/850/software/configuration/guide/dhcpvlan.html">Configuring a LAN with DHCP and VLANs</a></h2>
+<h3 id="creating-and-assigning-vlans">Creating and assigning VLANs</h3>
+<p>To create a VLAN, run the following command in global configuration mode.</p>
+<pre><code class="language-shell">Switch(config)#vlan [VLAN number or name]
+</code></pre>
+<p>To assign a VLAN to an interface, use the following command.</p>
+<pre><code class="language-shell">Switch(config-if)#switchport access vlan [VLAN number or name]
+</code></pre>
+<p>Create 3 VLANs: VLAN 10, VLAN 20, and VLAN 30 by running the following commands.</p>
+<pre><code class="language-shell">Switch&gt;enable
+Switch#configure terminal
+Switch(config)#vlan 10
+Switch(config-vlan)#exit
+Switch(config)#vlan 20
+Switch(config-vlan)#exit
+Switch(config)#vlan 30
+Switch(config-vlan)#exit
+Switch(config)#
+</code></pre>
+<p>Assign <strong>VLAN 10</strong> to <em>Fa0/1</em> and  <em>Fa0/2</em> , <strong>VLAN 20</strong> to <em>Fa0/3</em> and  <em>Fa0/4</em> , and <strong>VLAN 30</strong> to <em>Fa0/5</em> and  <em>Fa0/6</em> .</p>
+<pre><code class="language-shell">Switch&gt;enable
+Switch#configure terminal
+Switch(config)#interface FastEthernet 0/1
+Switch(config-if)#switchport access vlan 10
+Switch(config-if)#exit
+Switch(config)#interface FastEthernet 0/2
+Switch(config-if)#switchport access vlan 10
+Switch(config-if)#exit
+Switch(config)#interface FastEthernet 0/3
+Switch(config-if)#switchport access vlan 20
+Switch(config-if)#exit
+Switch(config)#interface FastEthernet 0/4
+Switch(config-if)#switchport access vlan 20
+Switch(config-if)#exit
+Switch(config)#interface FastEthernet 0/5
+Switch(config-if)#switchport access vlan 30
+Switch(config-if)#exit
+Switch(config)#interface FastEthernet 0/6
+Switch(config-if)#switchport access vlan 30
+Switch(config-if)#exit
+Switch(config)#
+</code></pre>
+<h3 id="configuring-trunk-port">Configuring trunk port</h3>
+<pre><code class="language-shell">Switch(config)#interface GigabitEthernet 0/1
+Switch(config-if)#switchport mode trunk
+Switch(config-if)#exit
+Switch(config)#
+</code></pre>
+<h3 id="configuring-dhcp-server-and-creating-dhcp-pools">Configuring DHCP server and creating DHCP pools</h3>
+<p>By default, DHCP service is enabled on all supporting Cisco switches. To use this service, we have to create and configure a DHCP pool on the switch.</p>
+<p>The following table lists the steps that are required to create and configure a DHCP pool.</p>
+<table>
+<thead>
+<tr>
+<th><strong>Configuration step</strong></th>
+<th><strong>Description ( <em>required command</em> )</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Define reserved IP addresses</td>
+<td>Use the'ip dhcp excluded-address' command to define the range of reserved IP addresses.</td>
+</tr>
+<tr>
+<td>Create the DHCP pool</td>
+<td>To create a DHCP pool and enter DHCP pool configuration mode, use the'ip dhcp pool [<em>pool name</em> ]' command.</td>
+</tr>
+<tr>
+<td>Define IP range for lease</td>
+<td>use the 'network [<em>network ID</em> ] [ <em>subnet mask</em> ]' command to define the range of IP addresses. DHCP uses this range to provide IP configuration to clients.</td>
+</tr>
+<tr>
+<td>Set default gateway IP</td>
+<td>To set the default gateway IP address, use the 'default-router [<em>IP address of the default gateway</em> ]' command.</td>
+</tr>
+<tr>
+<td>Set DNS server IP</td>
+<td>To set the DNS server IP address, use the'dns-server [<em>IP address of the DNS server</em> ]' command.</td>
+</tr>
+</tbody>
+</table>
+<p>Create three DHCP pools by using the above configuration steps.</p>
+<pre><code class="language-shell">Switch&gt;enable
+Switch#configure terminal
+Switch(config)#ip dhcp excluded-address 10.0.0.1 10.0.0.10
+Switch(config)#ip dhcp excluded-address 20.0.0.1 20.0.0.10
+Switch(config)#ip dhcp excluded-address 30.0.0.1 30.0.0.10
+Switch(config)#ip dhcp pool vPool10
+Switch(dhcp-config)#network 10.0.0.0 255.0.0.0
+Switch(dhcp-config)#default-router 10.0.0.1
+Switch(dhcp-config)#dns-server 4.4.4.4
+Switch(dhcp-config)#exit
+Switch(config)#ip dhcp pool vPool20
+Switch(dhcp-config)#network 20.0.0.0 255.0.0.0
+Switch(dhcp-config)# default-router 20.0.0.1
+Switch(dhcp-config)# dns-server 8.8.8.8
+Switch(dhcp-config)#exit
+Switch(config)#ip dhcp pool vPool30
+Switch(dhcp-config)#network 30.0.0.0 255.0.0.0
+Switch(dhcp-config)#default-router 30.0.0.1
+Switch(dhcp-config)#dns-server 30.0.0.2
+Switch(dhcp-config)#exit
+Switch(config)#
+</code></pre>
+<h3 id="assigning-ip-addresses-to-vlans">Assigning IP addresses to VLANs</h3>
+<p>DHCP uses the IP address of a VLAN to determine the pool from which it should provide an IP configuration. To assign an IP address to the VLAN, use the following commands.</p>
+<pre><code class="language-shell">Switch&gt;enable
+Switch#configure terminal
+Switch(config)#interface vlan [vlan name or number]
+Switch(config-if)#ip address [ip address] [subnet mask]
+</code></pre>
+<p>Assign an IP address to each VLAN from the reserved IP address of the corresponding DHCP pool.</p>
+<pre><code class="language-shell">Switch&gt;enable
+Switch#configure terminal
+Switch(config)#interface vlan 10
+Switch(config-if)#ip address 10.0.0.5 255.0.0.0
+Switch(config-if)#exit
+Switch(config)#interface vlan 20
+Switch(config-if)#ip address 20.0.0.5 255.0.0.0
+Switch(config-if)#exit
+Switch(config)#interface vlan 30
+Switch(config-if)#ip address 30.0.0.5 255.0.0.0
+Switch(config-if)#exit
+Switch(config)#
+</code></pre>
+<h3 id="configuring-the-routers-interface">Configuring the router's interface</h3>
+<p>By default, different VLANs cannot communicate with each other. To allow communication between different VLANs, we have to connect them through a router. We don't need a dedicated router interface for each VLAN. Routers support interface virtualization. We can use a single router interface to allow communication between multiple VLANs.</p>
+<p>To virtualize the Fa0/0 interface and to configure it to allow communication between different VLANs, use the following configuration on the router.</p>
+<pre><code class="language-shell">Router&gt;enable
+Router#configure terminal
+Enter configuration commands, one per line. End with CNTL/Z.
+Router(config)#interface FastEthernet 0/0
+Router(config-if)#no ip address
+Router(config-if)#no shutdown
+Router(config-if)#exit
+Router(config)#interface FastEthernet 0/0.10
+Router(config-subif)#encapsulation dot1Q 10
+Router(config-subif)#ip address 10.0.0.1 255.0.0.0
+Router(config-subif)#exit
+Router(config)#interface FastEthernet 0/0.20
+Router(config-subif)#encapsulation dot1Q 20
+Router(config-subif)#ip address 20.0.0.1 255.0.0.0
+Router(config-subif)#exit
+Router(config)#interface FastEthernet 0/0.30
+Router(config-subif)#encapsulation dot1Q 30
+Router(config-subif)#ip address 30.0.0.1 255.0.0.0
+Router(config-subif)#exit
+Router(config)#
+</code></pre>
+<h2 id="voip"><a href="https://pt.wikipedia.org/wiki/Voz_sobre_IP">VOIP</a></h2>
+<h3 id="packet-tracer-811-tutorial-ip-telephony-basic-configuration"><a href="https://www.packettracernetwork.com/tutorials/voipconfiguration.html">Packet Tracer 8.1.1 tutorial - IP telephony basic configuration</a></h3>
+<h3 id="router-config">Router Config</h3>
+<pre><code class="language-shell">Router&gt;
+Router&gt;enable
+Router#configure terminal
+Router(config)#ip dhcp pool VOICE
+Router(dhcp-config)#option 150 ip 10.10.10.254 #atribuir som/voz
+Router(dhcp-config)#exit
+Router(config)#
+Router(config)#telephony-service
+Router(config-telephony)#max-dn 3 #n.º de telefones
+Router(config-telephony)#max-ephones 3 #Qtd de telefones fisicos
+Router(config-telephony)#ip source-address 10.10.10.254 port 2000
+Router(config-telephony)#auto assign 1 to 3
+Router(dhcp-telephony)#exit
+</code></pre>
+<h3 id="phone-config">Phone Config</h3>
+<pre><code class="language-shell">ephone-dn 1
+number 1002
+</code></pre>
+<h3 id="switch-config">Switch config</h3>
+<pre><code class="language-shell">int range f0/1-3
+switchport voice vlan 1
+</code></pre>
+<hr />
+<h2 id="tcpip"><a href="https://pt.wikipedia.org/wiki/Endere%C3%A7o_IP">TCP/IP</a></h2>
+<h2 id="transmission-control-protocol"><a href="https://en.wikipedia.org/wiki/Transmission_Control_Protocol">Transmission Control Protocol</a></h2>
+<h2 id="internet-protocol"><a href="https://en.wikipedia.org/wiki/Internet_Protocol">Internet Protocol</a></h2>
+<h2 id="dhcp"><a href="https://pt.wikipedia.org/wiki/Dynamic_Host_Configuration_Protocol">DHCP</a></h2>
+<h2 id="dynamic-host-configuration-protocol"><a href="https://en.wikipedia.org/wiki/Dynamic_Host_Configuration_Protocol">Dynamic Host Configuration Protocol</a></h2>
+<pre><code class="language-shell">Router&gt;enable
+Router(config)#configure terminal
+Router(config)#ip dhcp pool DHCPSERVER
+Router(dhcp-config)#network 10.10.10.0 255.255.255.0
+Router(dhcp-config)#default-router 10.10.10.254
+Router(dhcp-config)#dns-server 30.30.30.30
+Router(dhcp-config)#exit
+Router(config)#exit
+</code></pre>
+<p>IP DHCP excluded-address (excluir os 20 primeiros IP's)</p>
+<pre><code class="language-shell">Router&gt;enable
+Router&gt;configure terminal
+Router(config)#ip dhcp excluded-address 10.10.10.1 10.10.10.20
+Router(config)#ip dhcp excluded-address 10.10.10.250 10.10.10.254
+Router(config)#end
+Router&gt;write
+</code></pre>
+<h2 id="ntp"><a href="https://en.wikipedia.org/wiki/Network_Time_Protocol">NTP</a></h2>
+<p><strong>Network Time Protocol</strong> ( <strong>NTP</strong> ) is a <a href="https://en.wikipedia.org/wiki/Networking_protocol" title="Networking protocol">networking protocol</a> for <a href="https://en.wikipedia.org/wiki/Clock_synchronization" title="Clock synchronization">clock synchronization</a> between computer systems.</p>
+<pre><code class="language-shell">Router&gt;enable
+Router(config)#configure terminal
+Router(config)#ntp server xx.xx.xx.xx
+Router(config)#exit
+Router#copy running-config startup-config
+</code></pre>
+<p>Destination filename [startup-config]?</p>
+<pre><code class="language-shell">Router#write
+</code></pre>
+<p>SHOW Options:</p>
+<pre><code class="language-shell">Router#show ntp status
+Router#show ntp associations
+Router#show clock
+Router#show detail
+</code></pre>
+<h2 id="set-clock-rate-on-router-serial-interface"><a href="https://www.cisco.com/c/en/us/td/docs/ios-xml/ios/interface/command/ir-cr-book/ir-c2.html">Set Clock Rate on Router Serial Interface</a></h2>
+<h2 id="dte-data-terminating-equipment">DTE (Data Terminating Equipment)</h2>
+<p>DTE devices are computers, routers and bridges. Slaves</p>
+<h2 id="dce-data-circuit-terminating-equipment">DCE (Data Circuit Terminating Equipment)</h2>
+<p>Equipment or devices which provide clocking to other devices. Master</p>
+<hr />
+<pre><code class="language-shell">Router&gt;enable
+Router#(config-if)# clock rate 64000
+</code></pre>
+<hr />
+<h2 id="nat">NAT</h2>
+<h2 id="network-address-translation"><a href="https://en.wikipedia.org/wiki/Network_address_translation">Network address translation</a></h2>
+<h2 id="arp">ARP</h2>
+<h2 id="address-resolution-protocol"><a href="https://en.wikipedia.org/wiki/Address_Resolution_Protocol">Address Resolution Protocol</a></h2>
+<h2 id="firewall-router"><a href="https://www.cisco.com/c/en/us/td/docs/routers/access/1800/1801/software/configuration/guide/scg/firewall.html">FireWall - Router</a></h2>
+<p>ACL - Access Control List</p>
+<p>The ACLs are divided into two types</p>
+<ul>
+<li>standard ACLs,</li>
+<li>are access control lists that define which traffic is allowed to travel and cross a network. They are used to filter traffic based on source and destination IP addresses.</li>
+<li>extended ACLs.</li>
+<li>are more difficult to configure and require more processor time than the standard access lists, but they enable a much more granular level of control.</li>
+</ul>
+<p>A standard ACL can be either a numbered or named.</p>
+<p>A numbered ACL has a range of <strong>1-99</strong> or <strong>1300-1999</strong> .</p>
+<p>When configuring a standard ACL, you will need to specify a range of IP addresses.</p>
+<p>The range can be either a host IP address or a network IP address.</p>
+<hr />
+<p>**ACL Rules STD - Reverse Mask</p>
+<p>**0.0.0.0 for Host</p>
+<p>**0.0.0.255 for NETWORK</p>
+<hr />
+<pre><code class="language-shell">RT(config)#access-list 1 deny 192.168.1.0  0.0.0.255
+RT(config)#access-list 2 permit 192.168.7.0  0.0.0.255
+RT(config)#access-list 2 permit any
+RT(config)#int fa 0/0  (192.168.1.0)
+RT(config)#int fa 1/0 (10.0.0.0)
+RT(config-if)#ip access-group 2  out
+RT# show access-list
+</code></pre>
+<hr />
+<h2 id="frame-relay"><a href="https://content.cisco.com/chapter.sjs?uri=/searchable/chapter/content/en/us/td/docs/ios-xml/ios/wan_frly/configuration/15-s/wan-frly-15-s-book/wan-cfg-frm-rly.html.xml">Frame Relay</a></h2>
+<p>Ligaçãode dados de altavelocidade</p>
+<p>A comunicação é feita dividindo o pack em quadros (frame) de forma a acelerar o envio, no entanto é uma rede não confiável pois não temcontrolo de erros nem de fluxo.</p>
+<p>Baseia-se num circuito“virtual” onde as portas são utilizadas para a partilha de frames.</p>
+<pre><code class="language-shell">Router&gt;enable
+Router#configure terminal
+Router(config)#interface serial 0/0/0
+Router(config-if)#encapsulation frame-relay
+</code></pre>
+<p>A estratégia é criar uma tabela com as ligações necessárias, em cada Porta Série, atribuir uma DLCI para cada ligação (router).</p>
+<p>The DLCI is a number that identifies the logical circuit between the router and the frame relay switch.</p>
+<p><img alt="Frame Relay DLCI" src="https://github.com/PGodinho/cet-network/blob/main/image/wiki-pics/dlci-table.png?raw=true" /></p>
+<p>Permite uma melhor visualização das ligações a manipular:</p>
+<p><img alt="Frame Relay Table" src="https://github.com/PGodinho/cet-network/blob/main/image/wiki-pics/frame-relay-table.png?raw=true" /></p>
+<hr />
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../../OSI/" class="md-footer__link md-footer__link--prev" aria-label="Previous: OSI - MODEL">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                OSI - MODEL
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../Frame-Relay/" class="md-footer__link md-footer__link--next" aria-label="Next: Frame Relay">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Frame Relay
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+      <div class="md-progress" data-md-component="progress" role="progressbar"></div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.instant", "navigation.instant.prefetch", "navigation.instant.progress", "navigation.tracking", "navigation.tabs", "navigation.tabs.sticky", "navigation.expand", "navigation.sections", "navigation.path", "navigation.indexes", "search.suggest", "search.highlight", "search.share", "navigation.footer", "content.code.copy", "content.code.select"], "search": "../../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.a7c05c9e.min.js"></script>
+      
+    
+  </body>
+</html>
