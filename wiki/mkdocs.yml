@@ -108,5 +108,5 @@ extra:
       link: https://pt.linkedin.com/
       name: LinkedIn
     - icon: fontawesome/solid/house-flag
-      link: https://localhost/
-      name: LinkedIn      
+      link: https://cet-network.netlify.app
+      name: CET-NetWork      
