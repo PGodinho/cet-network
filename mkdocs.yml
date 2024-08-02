@@ -97,17 +97,13 @@ markdown_extensions:
   - pymdownx.superfences
 
 #  Extra
-copyright: Copyright &copy; 2024 - Fader Pessoa
+copyright: Copyright &copy; 2024 - PGodinho
 extra:
   generator: false
   social:
-    - icon: fontawesome/brands/square-lastfm
-      link: https://www.last.fm/user/LordFader_Sound
-      name: LordFader on Last.FM
-    - icon: fontawesome/solid/radio
-      link: https://tunein.com/radio/LordFader_SoundWorks-s291860/
-      name: LordFader on Tunein   
-    - icon: fontawesome/solid/hand-fist
-      link: https://my.secondlife.com/lordfader.pessoa 
-      name: LordFader on Seconlife          
-
+    - icon: fontawesome/brands/square-github
+      link: https://github.com/PGodinho
+      name: PGodinho @github
+    - icon: fontawesome/brands/linkedin
+      link: https://pt.linkedin.com/
+      name: LinkedIn   

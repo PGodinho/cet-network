@@ -11,6 +11,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://cet-network.netlify.app/CET-Docs/</loc>
+         <lastmod>2024-08-02</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://cet-network.netlify.app/CET-Docs/CMD/</loc>
          <lastmod>2024-08-02</lastmod>
          <changefreq>daily</changefreq>

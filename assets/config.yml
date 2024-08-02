@@ -56,7 +56,7 @@ links:
     url: "#"
   - name: "CET"
     icon: "fa-solid fa-building-flag"
-    url: "#cet"
+    url: ""
     ;target: "_blank" # optional html a tag target attribute
   - name: "Docs"
     icon: "fa-solid fa-book-skull"
