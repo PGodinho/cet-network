@@ -1,14 +1,16 @@
 # [OSI - MODEL](https://en.wikipedia.org/wiki/OSI_model)
 
-![OSI-1](https://github.com/PGodinho/cet-network/blob/main/image/OSI/OSI_1.png?raw=true)
+## OSI-TCP/IP
+
+![OSI-TCP/IP](../CET/image/OSI/OSI_3-tcp-ip-camadas.png)
 
 ---
 
-![OSI-2](https://github.com/PGodinho/cet-network/blob/main/image/OSI/OSI_2.png?raw=true)
+![OSI-1](../CET/image/OSI/OSI-1.png)
 
 ---
 
-![OSI-TCP/IP](https://github.com/PGodinho/cet-network/blob/main/image/OSI/OSI_3-tcp-ip-camadas.png?raw=true)
+![OSI-2](../CET/image/OSI/OSI-2.png)
 
 ---
 
