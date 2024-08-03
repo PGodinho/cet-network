@@ -135,29 +135,4 @@
          <lastmod>2024-08-03</lastmod>
          <changefreq>daily</changefreq>
     </url>
-    <url>
-         <loc>https://cet-network.netlify.app/Homer/configuration/</loc>
-         <lastmod>2024-08-03</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://cet-network.netlify.app/Homer/customservices/</loc>
-         <lastmod>2024-08-03</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://cet-network.netlify.app/Homer/development/</loc>
-         <lastmod>2024-08-03</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://cet-network.netlify.app/Homer/tips-and-tricks/</loc>
-         <lastmod>2024-08-03</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://cet-network.netlify.app/Homer/troubleshooting/</loc>
-         <lastmod>2024-08-03</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
 </urlset>
