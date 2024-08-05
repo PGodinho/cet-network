@@ -5,31 +5,31 @@
 ## RJ 45
 
 <p align="center">
-  <img width="460" height="300" src="https://github.com/PGodinho/cet-network/blob/main/image/Ethernet/RJ-45-PinOUT.png?raw=true">
+  <img width="460" height="300" src="/wiki/docs/CET/image/Cables/RJ-45-PinOUT.png">
 </p>
 
 ### 568A & 568B
 
 <p align="center">
-  <img src="https://github.com/PGodinho/cet-network/blob/main/image/Ethernet/UTP-568.png?raw=true">
+  <img src="/wiki/docs/CET/image/Ethernet/UTP-568.png">
 </p>
 
 <p align="center">
-  <img src="https://github.com/PGodinho/cet-network/blob/main/image/Ethernet/RJ45_Straight_pinout.png?raw=true">
+  <img src="/wiki/docs/CET/image/Ethernet/RJ45_Straight_pinout.png">
 </p>
 
 <p align="center">
-  <img src="https://github.com/PGodinho/cet-network/blob/main/image/Ethernet/RJ45_Crossover_pinout.png?raw=true">
+  <img src="/wiki/docs/CET/image/Ethernet/RJ45_Crossover_pinout.png">
 </p>
 
 ## RS232 Pin Out
 
 <p align="center">
-  <img width="460" height="300" src="https://github.com/PGodinho/cet-network/blob/main/image/RS232/RS232_PinOut.jpg?raw=true">
+  <img width="460" height="300" src="/wiki/docs/CET/image/RS232/RS232_PinOut.jpg">
 </p>
 
 ### Serial Console Cable Pin Out
 
 <p align="center">
-  <img width="460" height="300" src="https://github.com/PGodinho/cet-network/blob/main/image/RS232/SerialConsoleCable.jpg?raw=true">
+  <img width="460" height="300" src="/wiki/docs/CET/image/RS232/SerialConsoleCable.jpg">
 </p>
