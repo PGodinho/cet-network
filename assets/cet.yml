@@ -4,7 +4,7 @@
 
 title: "CET-NETWORK"
 subtitle: "Systems & Network Administration"
-logo: "../assets/image/logo.svg"
+logo: "./assets/image/logo.svg"
 # icon: "fas fa-skull-crossbones" # Optional icon
 
 header: true
