@@ -1,16 +1,20 @@
-<div style="page-break-after: always"></div>
-
 # [Cyber Segurança](https://www.microsoft.com/pt-pt/security/business/security-101/what-is-cybersecurity)
 
-## Modelo CIA (Confidencial, Integro e Disponível)
+## Modelo CID (Confidencial, Integro e Dísponivel)
 
-![CIA](https://github.com/PGodinho/cet-network/blob/main/image/wiki-pics/cia.png?raw=true)
+CIA - *Confidentiality, Integrity, and Availability*
+
+<figure markdown="span">
+![CID](../image/CyberSecurity/cia.png)
+<figcaption>Modelo CID/CIA</figcaption>
+</figure>
 
 * **Confidencialidade** : A informação só deve ser visível às pessoas certas.
 * **Integridade** : A informação só deve ser alterada pelas pessoas ou processos certos.
 * **Disponibilidade** : A informação deve ser visível e acessível sempre que necessário.
 
 <div style="page-break-after: always"></div>
+---
 
 ## Mitigação de Ameaças
 
@@ -42,6 +46,9 @@ Acesso não autorizado a dispositivos, serviços, redes ou sistemas
 
 Ocorre quando o intruso obtém com sucesso acesso ou controlo de dados
 
+<div style="page-break-after: always"></div>
+---
+
 ## Malware
 
 **Software malicioso**: Infecta sistemas e realizão ações danosas, roubo de informação e disrrupção do sistema.
@@ -66,6 +73,9 @@ Ação que o Malware provoca no dispositivo ou sistema infetado
 * **Backdoors** - exploração de uma vulnerabilidade num sistema ou dispositivo para contornar as medidas de segurança existentes e causar danos.
 * **Botnet** - rede de dispositivos infetados que podem ser controlados remotamente para realizar ações nefastas.
 
+<div style="page-break-after: always"></div>
+---
+
 ## Estratégia de Mitigação
 
 Medidas de prevenção ou defesa de ciberataques.
@@ -81,7 +91,7 @@ Implementação de politicas e processos organizacionais com o objectivo de evit
 * Bloqueio de certos sites utilizando filtros de conteúdo da web.
 * Manter navegadores atualizados.
 
-### Formação de Peopleware
+### Formação do Peopleware
 
 * Identificar elementos suspeitos numa mensagem.
 * Nunca responder a pedidos externos de informação pessoal.
@@ -96,6 +106,10 @@ Recolha de informações dos sistemas, detalhes sobre vulnerabilidades, informa�
 
 **Inteligência da Ameaça** - A recolha de informações para responder a ciberataques.
 
+<div style="page-break-after: always"></div>
+
+---
+
 # [ENISA (Agência da União Europeia para a Cibersegurança)](https://www.enisa.europa.eu/)
 
 ## REGULAMENTO (UE)
@@ -107,6 +121,9 @@ Recolha de informações dos sistemas, detalhes sobre vulnerabilidades, informa�
 ### Regime Jurídico da Segurança do Ciberespaço
 
 #### [Decreto-Lei n.º 65/2021, de 30 de julho](https://dre.pt/dre/detalhe/decreto-lei/65-2021-168697988?_ts=1673395200034)
+
+<div style="page-break-after: always"></div>
+---
 
 # [GNS - Gabinete Nacional de Segurança](https://www.gns.gov.pt/)
 
@@ -128,11 +145,17 @@ Seguro Electrónico
 
 Risco como fator de Decisão
 
+<div style="page-break-after: always"></div>
+
+---
+
 # [Confiança Zero](https://www.microsoft.com/pt-pt/security/business/zero-trust)
 
 [Security.org](https://www.security.org/)
 
-[How Secure is  my password](https://www.security.org/how-secure-is-my-password/)
+<div style="page-break-after: always"></div>
+
+---
 
 # Cyber Attack Maps
 
@@ -145,13 +168,3 @@ Risco como fator de Decisão
 ## [Kaspersky](https://cybermap.kaspersky.com/pt)
 
 ## [Threatbutt Internet Hacking Attack Attribution Map](https://threatbutt.com/map/)
-
-[https://siteseguro.deco.proteste.pt/](https://siteseguro.deco.proteste.pt/)
-
-[https://whois.domaintools.com/](https://whois.domaintools.com/)
-
-[https://security-list.js.org/](https://security-list.js.org/)
-
-[https://web.archive.org/](https://web.archive.org/)
-
-[https://www.croxyproxy.com/](https://www.croxyproxy.com/)
