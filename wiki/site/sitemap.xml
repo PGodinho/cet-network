@@ -11,11 +11,6 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://cet-network.netlify.app/CET/CMD/</loc>
-         <lastmod>2024-08-05</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
          <loc>https://cet-network.netlify.app/CET/OS/</loc>
          <lastmod>2024-08-05</lastmod>
          <changefreq>daily</changefreq>
@@ -122,6 +117,11 @@
     </url>
     <url>
          <loc>https://cet-network.netlify.app/CET/Sys%20Admin/A%20SysAdmin-resources/</loc>
+         <lastmod>2024-08-05</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://cet-network.netlify.app/CET/Sys%20Admin/CMD/</loc>
          <lastmod>2024-08-05</lastmod>
          <changefreq>daily</changefreq>
     </url>

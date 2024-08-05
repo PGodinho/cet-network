@@ -98,11 +98,6 @@ services:
   - name: "Tools"
     icon: "fa-solid fa-screwdriver-wrench"
     items:        
-      - name: "Help Desk"
-        logo: "./assets/tools/help-desk-service.png"
-        subtitle: "Help Desk"
-        tag: "help"
-        url: "#help_desk" 
       - name: "VSCode"
         logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Visual_Studio_Code_1.35_icon.svg/2048px-Visual_Studio_Code_1.35_icon.svg.png"
         subtitle: "Ambiente Integrado de Desenvolvimento"
@@ -120,7 +115,12 @@ services:
         subtitle: "MKDocs"
         tag: "markdown"
         url: "https://www.mkdocs.org/"
-        target: "_blank" # optional html a tag target attribute             
+        target: "_blank" # optional html a tag target attribute 
+      - name: "Help Desk"
+        logo: "./assets/tools/help-desk-service.png"
+        subtitle: "Help Desk"
+        tag: "help"
+        url: "#help_desk"               
 ####################################################################
   - name: "Manual"
     icon: "fas fa-book"
