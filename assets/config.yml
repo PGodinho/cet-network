@@ -5,7 +5,7 @@
 title: "CET-NETWORK"
 subtitle: "IT-Tools"
 logo: "image/logo.svg"
-icon: "fas fa-solid fa-ethernet" # Optional icon
+#icon: "fas fa-solid fa-ethernet" # Optional icon
 
 header: true
 footer: '<p>Criado com o auxílio de: <a href="https://bulma.io/">bulma</a>, <a href="https://vuejs.org/">vuejs</a> & <a href="https://fontawesome.com/">font awesome</a></p>' # set false if you want to hide it.
