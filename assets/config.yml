@@ -120,7 +120,7 @@ services:
         logo: "./assets/tools/help-desk-service.png"
         subtitle: "Help Desk"
         tag: "help"
-        url: "#help_desk"               
+        url: "#"               
 ####################################################################
   - name: "Manual"
     icon: "fas fa-book"
