@@ -101,11 +101,11 @@ extra:
   generator: true
   social:
     - icon: fontawesome/brands/square-github
-      link: https://github.com/PGodinho
-      name: PGodinho @github
+      link: https://github.com
+      name: GitHub @github
     - icon: fontawesome/brands/linkedin
       link: https://pt.linkedin.com/
       name: LinkedIn
     - icon: fontawesome/solid/house-flag
       link: https://cet-network.netlify.app
-      name: CET-NetWork      
+      name: CET-NetWork    

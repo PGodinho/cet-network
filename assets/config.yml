@@ -5,7 +5,7 @@
 title: "CET-NETWORK"
 subtitle: "IT-Tools"
 logo: "image/logo.svg"
-#icon: "fas fa-solid fa-ethernet" # Optional icon
+icon: "fas fa-solid fa-ethernet" # Optional icon
 
 header: true
 footer: '<p>Criado com o auxílio de: <a href="https://bulma.io/">bulma</a>, <a href="https://vuejs.org/">vuejs</a> & <a href="https://fontawesome.com/">font awesome</a></p>' # set false if you want to hide it.
@@ -61,7 +61,7 @@ links:
   - name: "Docs"
     icon: "fa-solid fa-book-skull"
     url: "wiki/site/index.html"
-    ;target: "_blank" # optional html a tag target attribute  
+    target: "_blank" # optional html a tag target attribute  
   
   # this will link to a second homer page that will load config from additional-page.yml and keep default config values as in config.yml file
   # see url field and assets/additional-page.yml.dist used in this example:
