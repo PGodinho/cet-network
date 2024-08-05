@@ -4,7 +4,7 @@
 
 title: "CET-NETWORK"
 subtitle: "Systems & Network Administration"
-logo: "image/logo.svg"
+logo: "/assets/image/logo.svg"
 # icon: "fas fa-skull-crossbones" # Optional icon
 
 header: true
@@ -46,7 +46,7 @@ message:
   style: "is-dark" # See https://bulma.io/documentation/components/message/#colors for styling options.
   title: "CET-NETWORK"
   icon: "fa fa-solid fa-skull-crossbones"
-  content: "Cyber-hacking-tools.<br /> More info @ <a href='https://github.com/PGodinho/cet-network/wiki' target='_blank'>SEBENTA</a>"
+  content: "Cyber-hacking-tools.<br /> More info @ <a href='https://github.com/PGodinho/cet-network/wiki' target='_blank'>Draft</a>"
 
 # Optional navbar
 # links: [] # Allows for navbar (dark mode, layout, and search) without any links
@@ -141,7 +141,7 @@ services:
         tag: "home"
         url: "#dasic"
         #target: "_blank" # optional html a tag target attribute
-  ##############################################################################################################
+###################################################################
   - name: "Applications"
     icon: "fas fa-cloud"
     items:
@@ -175,7 +175,7 @@ services:
         tag: "web-check"
         url: "https://security-list.js.org"
         target: "_blank" # optional html a tag target attribute  
-  ###################################################################
+###################################################################
   - name: "interesting links"
     icon: "fas fa-solid fa-arrow-up-right-from-square"
     items:

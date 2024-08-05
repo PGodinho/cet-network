@@ -7,25 +7,25 @@
 ## Computer - Audio Card Standards
 
 <p align="center">
-  <img src="https://github.com/PGodinho/cet-network/blob/main/image/Audio/audio_card.jpg?raw=true">
+  <img src="/wiki/docs/CET/image/Audio/audio_card.jpg">
 </p>
 
 ### XLR over CAT 5/6/7
 
 <p align="center">
-  <img src="https://github.com/PGodinho/cet-network/blob/main/image/Audio/XLR-Over-CAT-5-6-7.png?raw=true?raw=true">
+  <img src="/wiki/docs/CET/image/Audio/XLR-Over-CAT-5-6-7.png">
 </p>
 
 ## Balanced
 
 ### XLR
 
-![XLR - PinOUT](https://github.com/PGodinho/cet-network/blob/main/image/Audio/XLR-PinOUT.png?raw=true)
+![XLR - PinOUT](../image/Audio/XLR-PinOUT.png)
 
 #### XLR - Jack
 
-![XLR - Jack](https://github.com/PGodinho/cet-network/blob/main/image/Audio/XLR-Jack-Balanced.png?raw=true)
+![XLR - Jack](../image/Audio/XLR-Jack-Balanced.png)
 
 ## Unbalanced
 
-![XLR - Jack](https://github.com/PGodinho/cet-network/blob/main/image/Audio/XLR-Jack-Unbalanced.png?raw=true)
+![XLR - Jack](../image/Audio/XLR-Jack-Unbalanced.png)
