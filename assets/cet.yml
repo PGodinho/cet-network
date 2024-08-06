@@ -135,12 +135,6 @@ services:
         tag: "raspberry pi"
         url: "https://www.raspberrypi.org"
         target: "_blank" # optional html a tag target attribute
-      - name: "NetForce"
-        logo: "./assets/tools/netforce.png"
-        subtitle: "Formação e Certificação de Formadores e outros profissionais..."
-        tag: "home"
-        url: "#dasic"
-        #target: "_blank" # optional html a tag target attribute
 ###################################################################
   - name: "Applications"
     icon: "fas fa-cloud"

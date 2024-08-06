@@ -76,6 +76,13 @@ services:
   - name: "Log ON"
     icon: "fa-solid fa-user-gear"
     items:
+      - name: "GitHub"
+        #icon: "fa-brands fa-github"
+        logo: "/assets/tools/github-mark-white.svg"
+        subtitle: "GitHub"
+        tag: "github"
+        url: "https://github.com/"
+        target: "_blank"
       - name: "VSCode"
         logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Visual_Studio_Code_1.35_icon.svg/2048px-Visual_Studio_Code_1.35_icon.svg.png"
         subtitle: "Live Coding"
