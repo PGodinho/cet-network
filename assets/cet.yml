@@ -129,6 +129,12 @@ services:
         tag: "gateway"
         url: "https://www.nethserver.org"
         target: "_blank" # optional html a tag target attribute
+      - name: "Workspace FrameWork !"
+        icon: "fa-solid fa-square-person-confined"
+        subtitle: "Ergonomic Clearances"
+        tag: "ergonomic"
+        url: "https://sustema.medium.com/ergonomic-clearances-for-control-room-82743f9fa1d6"
+        target: "_blank" # optional html a tag target attribute
       - name: "RaspberryPi"
         logo: "./assets/tools/raspberry-pi-foundation-vector-logo.svg"
         subtitle: "Foundation"
@@ -157,6 +163,16 @@ services:
         tag: "tutorials"
         url: "https://www.w3schools.com/"
         target: "_blank" # optional html a tag target attribute
+###################################################################
+  - name: "interesting links"
+    icon: "fas fa-solid fa-arrow-up-right-from-square"
+    items:
+      - name: "SSH"
+        icon: "fas fa-terminal"
+        subtitle: "What is an SSH Client?"
+        tag: "ssh"
+        url: "https://www.ssh.com/academy/ssh/client"
+        target: "_blank" # optional html a tag target attribute
       - name: "Web Check"
         logo: "https://cet-web-check.netlify.app/web-check.png"
         subtitle: "Online Network Tools"
@@ -169,28 +185,6 @@ services:
         tag: "web-check"
         url: "https://security-list.js.org"
         target: "_blank" # optional html a tag target attribute  
-###################################################################
-  - name: "interesting links"
-    icon: "fas fa-solid fa-arrow-up-right-from-square"
-    items:
-      - name: "SSH"
-        icon: "fas fa-terminal"
-        subtitle: "What is an SSH Client?"
-        tag: "ssh"
-        url: "https://www.ssh.com/academy/ssh/client"
-        target: "_blank" # optional html a tag target attribute
-      - name: "Workspace FrameWork !"
-        icon: "fa-solid fa-square-person-confined"
-        subtitle: "Ergonomic Clearances"
-        tag: "ergonomic"
-        url: "https://sustema.medium.com/ergonomic-clearances-for-control-room-82743f9fa1d6"
-        target: "_blank" # optional html a tag target attribute
-      - name: "r/selfhosted"
-        icon: "fa-brands fa-reddit-alien"
-        subtitle: "Bookmark example"
-        tag: "reddit"
-        url: "https://www.reddit.com/r/selfhosted/"
-        target: "_blank"
       - name: "Awesome selfhosted"
         icon: "fa-brands fa-github-alt"
         subtitle: "Another application"
