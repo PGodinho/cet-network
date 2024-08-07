@@ -4,8 +4,6 @@
 
 ![Cet-Network](./assets/image/README/Cet-Network.png)
 
-![1723032806440](image/README/1723032806440.png)
-
 ## Install
 
 Download and drop the content in your webserver
