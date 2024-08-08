@@ -1,6 +1,6 @@
-# [Cockpit](https://www.redhat.com/sysadmin/intro-cockpit)
+# [COCKPIT](https://www.redhat.com/sysadmin/intro-cockpit)
 
-## Cockpit, a browser-based administration tool for Linux
+Cockpit, a browser-based administration tool for Linux
 
 ### [Applications](https://cockpit-project.org/applications.html)
 

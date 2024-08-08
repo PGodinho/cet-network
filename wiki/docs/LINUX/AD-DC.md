@@ -10,14 +10,14 @@ This solution is useful for authenticating applications such as WordPress, FTP s
 
 ## Pre-requisites
 
-A fresh Linux server installation.
+* A fresh Linux server installation.
 
-ROOT access Level
+* ROOT access Level
 
 ## Definitions
 
- **Hostname** : dc1.domain.name
- **Domain** : domain.name
+ **Hostname** : dc1.domain.name  
+ **Domain** : domain.name  
  **IP** : 10.1.1.242/24
 
 ## Considerations
