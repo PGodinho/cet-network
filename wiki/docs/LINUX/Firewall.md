@@ -13,3 +13,12 @@ The network is logically divided into zones and the traffic flowing between them
 ### [UFW - Uncomplicated Firewall](https://manpages.ubuntu.com/manpages/lunar/en/man8/ufw.8.html)
 
 Is a program for managing a [netfilter](https://en.wikipedia.org/wiki/Netfilter "Netfilter") [firewall](https://en.wikipedia.org/wiki/Firewall_(computing)) "Firewall (computing)") designed to be easy to use.
+
+
+## Install & Config
+
+---
+
+### Troubleshoot
+
+### Examples

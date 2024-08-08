@@ -1,4 +1,4 @@
-# LINUX
+# LINUX [notes]
 
 ## Who & Where?
 
@@ -240,7 +240,6 @@ isc-dhcp-server
 /etc/default/isc-dhcp-server
 INTERFACES v4 = "eth0"
 ```
-
 
 ```bash
 /etc/dhcp/dhcpd.conf

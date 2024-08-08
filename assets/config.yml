@@ -62,7 +62,14 @@ links:
     icon: "fa-solid fa-book-skull"
     url: "wiki/site/index.html"
     target: "_blank" # optional html a tag target attribute  
-  
+  - name: "Hirens's Boot"
+    icon: "fa-fw fas fa-compact-disc"
+    url: "https://www.hirensbootcd.org/"
+    target: "_blank" # optional html a tag target attribute 
+  - name: "CloneZilla"
+    icon: "fa-fw fas fa-compact-disc"
+    url: "https://clonezilla.org/"
+    target: "_blank" # optional html a tag target attribute 
   # this will link to a second homer page that will load config from additional-page.yml and keep default config values as in config.yml file
   # see url field and assets/additional-page.yml.dist used in this example:
   #- name: "another page!"

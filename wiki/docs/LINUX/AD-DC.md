@@ -1,4 +1,6 @@
-# [AD-DC - Active Directory Domain Controller](https://wiki.samba.org/index.php/Main_Page)
+# [AD-DC ](https://wiki.samba.org/index.php/Main_Page)
+
+## [Active Directory Domain Controller](https://wiki.samba.org/index.php/Main_Page)
 
 ## [Samba as AD and Domain Controller](https://fedoramagazine.org/samba-as-ad-and-domain-controller/)
 
