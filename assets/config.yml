@@ -54,10 +54,10 @@ links:
   - name: "HOME"
     icon: "fas fa-solid fa-house"
     url: "#"
-  - name: "CET"
-    icon: "fa-solid fa-building-flag"
-    url: "#cet"
-    ;target: "_blank" # optional html a tag target attribute
+  # - name: "CET"
+  #   icon: "fa-solid fa-building-flag"
+  #   url: "#cet"
+  #   ;target: "_blank" # optional html a tag target attribute
   - name: "Docs"
     icon: "fa-solid fa-book-skull"
     url: "wiki/site/index.html"
