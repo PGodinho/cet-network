@@ -6,13 +6,13 @@ Teste #2
 
 ## T2 - Testing Code
 
-```python
+```python title="code.py"
 import tensorflow as tfdef whatever()
 ```
 
 ### Other Test with header and line numbers
 
-```python
+```python title="code.py" linenums="1"
 def bubble_sort(items):
  for i in range(len(items)):
   for j in range(len(items) - 1 -i):
