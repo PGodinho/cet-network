@@ -4,32 +4,21 @@
 
 ## RJ 45
 
-<p align="center">
-  <img width="460" height="300" src="/wiki/docs/CET/image/Cables/RJ-45-PinOUT.png">
-</p>
+![RJ 45](../image/Ethernet/RJ-45-PinOUT.png)
 
 ### 568A & 568B
 
-<p align="center">
-  <img src="/wiki/docs/CET/image/Ethernet/UTP-568.png">
-</p>
+![568A & 568B](../image/Ethernet/UTP-568.png)
 
-<p align="center">
-  <img src="/wiki/docs/CET/image/Ethernet/RJ45_Straight_pinout.png">
-</p>
+![568 - Straight](../image/Ethernet/RJ45_Straight_pinout.png)
 
-<p align="center">
-  <img src="/wiki/docs/CET/image/Ethernet/RJ45_Crossover_pinout.png">
-</p>
+
+![568 - Crossover](../image/Ethernet/RJ45_Crossover_pinout.png)
 
 ## RS232 Pin Out
 
-<p align="center">
-  <img width="460" height="300" src="/wiki/docs/CET/image/RS232/RS232_PinOut.jpg">
-</p>
+![RS232](../image/RS232/RS232_PinOut.jpg)
 
 ### Serial Console Cable Pin Out
 
-<p align="center">
-  <img width="460" height="300" src="/wiki/docs/CET/image/RS232/SerialConsoleCable.jpg">
-</p>
+![Serial Console Pin Out](../image/RS232/SerialConsoleCable.jpg)
