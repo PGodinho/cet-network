@@ -1,4 +1,6 @@
-# LINUX [notes]
+# [notes]
+
+## LINUX
 
 ## Who & Where?
 

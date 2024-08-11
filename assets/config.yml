@@ -51,7 +51,7 @@ message:
 # Optional navbar
 # links: [] # Allows for navbar (dark mode, layout, and search) without any links
 links:
-  - name: "Home"
+  - name: "HOME"
     icon: "fas fa-solid fa-house"
     url: "#"
   - name: "CET"
