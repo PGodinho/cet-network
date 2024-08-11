@@ -6,15 +6,11 @@
 
 ## Computer - Audio Card Standards
 
-<p align="center">
-  <img src="/wiki/docs/CET/image/Audio/audio_card.jpg">
-</p>
+![Audio Card](../image/Audio/audio_card.jpg)
 
 ### XLR over CAT 5/6/7
 
-<p align="center">
-  <img src="/wiki/docs/CET/image/Audio/XLR-Over-CAT-5-6-7.png">
-</p>
+![XLR over CAT 5/6/7](../image/Audio/XLR-Over-CAT-5-6-7.png)
 
 ## Balanced
 
