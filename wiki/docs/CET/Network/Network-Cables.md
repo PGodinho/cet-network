@@ -4,8 +4,6 @@
 
 ## RJ 45
 
-![RJ 45](../image/Ethernet/RJ-45-PinOUT.png)
-
 ### 568A & 568B
 
 ![568A & 568B](../image/Ethernet/UTP-568.png)
@@ -22,3 +20,5 @@
 ### Serial Console Cable Pin Out
 
 ![Serial Console Pin Out](../image/RS232/SerialConsoleCable.jpg)
+
+---
