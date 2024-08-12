@@ -1,4 +1,4 @@
-# [CMD](https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/cmd)
+# [CMD](https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/cmd "CMD")
 
 ```bash
 ipconfig /all /release /renew
@@ -232,7 +232,7 @@ shell:appsfolder
 
 ---
 
-## SUBNETTING (example in yellow):
+## SUBNETTING:
 
 | number of subnets:``        | 1   | 2   | 4   | 8    | 16  | 32  | 64  | 128 | 256 |
 | --------------------------- | --- | --- | --- | ---- | --- | --- | --- | --- | --- |

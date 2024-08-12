@@ -1,7 +1,18 @@
 ##################
-site_name: CET-Network
+site_name: DOCS-CET-Network
 site_url: https://cet-network.netlify.app/
+repo_url: https://github.com/PGodinho/cet-network
 site_description: Documents
+
+# nav:
+#     - 'APP': 'https://cet-network.netlify.app/'
+#     - Introduction: 'index.md'
+#     - './about.md'
+#     - Foo:
+#       - Overview: foo/index.md
+#       - Bar: foo/bar.md
+#     - 'Linux': 'NTP.md'  
+    
 
 ##################
 theme:
@@ -9,6 +20,7 @@ theme:
   logo: logo.svg
   favicon: logo.svg
   features:
+    - navigation.top
     - navigation.instant
     - navigation.instant.prefetch
     - navigation.instant.progress
@@ -16,7 +28,7 @@ theme:
     - navigation.tracking
     - navigation.tabs
     - navigation.tabs.sticky
-    - navigation.expand
+    #- navigation.expand
     - navigation.sections
     - navigation.path
     - navigation.indexes
@@ -49,10 +61,28 @@ theme:
 
 # Plugins
 plugins:
-  - search
+  - search:
+      separator: '[\s\u200b\-_,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'
   - open-in-new-tab
   - drawio
   - drawio-exporter
+  - info
+  - termynal:
+      # title: bash
+      # buttons: macos
+      # prompt_literal_start:
+      #   - "$"
+  # - enumerate-headings:
+  #       toc_depth: 2
+  #       strict: true
+  #       increment_across_pages: false
+        # include:
+        #   - "*"
+        # exclude:
+        #   - index.md
+        #   - another_page.md
+        # restart_increment_after:
+        #   - second_section.md
 
 
 # Extensions
@@ -94,6 +124,11 @@ markdown_extensions:
       custom_checkbox: true
   - pymdownx.tilde
   - pymdownx.superfences
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  
+  
 
 #  Extra
 copyright: Copyright &copy; 2024 - PGodinho
