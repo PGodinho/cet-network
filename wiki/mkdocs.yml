@@ -3,17 +3,7 @@ site_name: DOCS-CET-Network
 site_url: https://cet-network.netlify.app/
 repo_url: https://github.com/PGodinho/cet-network
 site_description: Documents
-
-# nav:
-#     - 'APP': 'https://cet-network.netlify.app/'
-#     - Introduction: 'index.md'
-#     - './about.md'
-#     - Foo:
-#       - Overview: foo/index.md
-#       - Bar: foo/bar.md
-#     - 'Linux': 'NTP.md'  
-    
-
+ 
 ##################
 theme:
   name: material
@@ -66,7 +56,7 @@ plugins:
   - open-in-new-tab
   - drawio
   - drawio-exporter
-  - info
+  #- info
   - termynal:
       # title: bash
       # buttons: macos
