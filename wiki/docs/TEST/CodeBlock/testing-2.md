@@ -25,7 +25,7 @@ def bubble_sort(items):
 ## Images
 
 <figure markdown="span">
-![Fader Draw](../draw/network-setup.drawio#2)
+![Fader Draw](/DRAW.io/draw/network-setup.drawio#2)
 <figcaption>Image caption</figcaption>
 </figure>
 

@@ -2,8 +2,4 @@
 
 ---
 
-Voltar para a aplicação principal
-
-[:fontawesome-solid-house: Aplicação](https://cet-network.netlify.app/){ .md-button }
-
----
+![](static.gif){ width="1200" }
