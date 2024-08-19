@@ -2,7 +2,7 @@
 
 ## Server Landing page
 
-![Cet-Network](assets/image/README/Cet-Network.png)
+![Cet-Network](/assets/image/README/Cet-Network.png)
 
 ## Install
 
