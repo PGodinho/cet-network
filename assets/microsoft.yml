@@ -61,8 +61,7 @@ services:
         subtitle: "Microsoft"
         tag: "microsoft"
         url: "https://learn.microsoft.com/en-us/"
-        target: "_blank" # optional html a tag target attribute  
-         
+        target: "_blank" # optional html a tag target attribute          
 ####################################################################        
   - name: "Tools"
     icon: "fa-solid fa-screwdriver-wrench"
@@ -99,6 +98,5 @@ services:
         subtitle: "WSL"
         tag: "microsoft"
         url: "https://learn.microsoft.com/en-us/windows/wsl/"
-        target: "_blank" # optional html a tag target attribute
-  
+        target: "_blank" # optional html a tag target attribute  
 ####################################################################
