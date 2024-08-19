@@ -75,12 +75,16 @@ plugins:
         #   - second_section.md
 
 
+##################
 # Extensions
 markdown_extensions:
   - abbr
   - admonition
   - attr_list
   - def_list
+  - codehilite
+  - fenced_code
+  - nl2br
   - tables
   - footnotes
   - md_in_html

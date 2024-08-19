@@ -335,8 +335,6 @@ Delete any entry that maps your hostname or FQDN to any IP besides the static IP
 
 Add an entry to map your host’s FQDN and static IP address.
 
-![Hosts](https://github.com/PGodinho/cet-network/blob/main/image/wiki-pics/etc-hosts.png?raw=true)
-
 Save the  *hosts* (/etc/hosts) file and exit the editor.
 
 ### FQDN Resolution

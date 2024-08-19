@@ -45,8 +45,8 @@ message:
   #url: https://b4bz.io
   style: "is-dark" # See https://bulma.io/documentation/components/message/#colors for styling options.
   title: "CET-NETWORK"
-  icon: "fa fa-solid fa-skull-crossbones"
-  content: "Cyber-hacking-tools.<br /> More info @ <a href='https://github.com/PGodinho/cet-network/wiki' target='_blank'>Draft</a>"
+  icon: "fa fa-solid fa-ethernet"
+  content: "Tools.<br /> More info @ <a href='https://github.com/PGodinho/cet-network/wiki' target='_blank'>Sebenta</a>"
 
 # Optional navbar
 # links: [] # Allows for navbar (dark mode, layout, and search) without any links
@@ -102,12 +102,7 @@ services:
         tag: "azure"
         url: "https://portal.azure.com/"  
         target: "_blank" # optional html a tag target attribute
-      - name: "CISCO"
-        logo: "./assets/tools/cisco.svg"
-        subtitle: "ID"
-        tag: "cisco"
-        url: "https://id.cisco.com/"
-        target: "_blank" # optional html a tag target attribute      
+      
 ####################################################################        
   - name: "Tools"
     icon: "fa-solid fa-screwdriver-wrench"
@@ -139,24 +134,18 @@ services:
   - name: "Manual"
     icon: "fas fa-book"
     items:
-      - name: "Microsoft WSL"
-        logo: "./assets/tools/microsoft_logo_wsl.png"
-        subtitle: "WSL"
-        tag: "microsoft"
-        url: "https://learn.microsoft.com/en-us/windows/wsl/"
-        target: "_blank" # optional html a tag target attribute
-      - name: "Microsoft VM"
+      - name: "Microsoft"
         logo: "./assets/tools/microsoft_logo_docs.png"
-        subtitle: "Hyper-V"
+        subtitle: "Learn"
         tag: "microsoft"
-        url: "https://learn.microsoft.com/en-us/virtualization/?source=docs"
-        target: "_blank" # optional html a tag target attribute  
+        url: "#microsoft"
+        ;target: "_blank" # optional html a tag target attribute
       - name: "Cisco"
         logo: "./assets/tools/cisco.svg"
         subtitle: "Networking Technologies and Protocols"
         tag: "cisco"
-        url: "https://www.cisco.com/c/en/us/tech/index.html"
-        target: "_blank" # optional html a tag target attribute 
+        url: "#cisco"
+        ;target: "_blank" # optional html a tag target attribute 
       - name: "Red Hat"
         logo: "./assets/tools/red_hat_logo.svg"
         subtitle: "Networking Guide"
