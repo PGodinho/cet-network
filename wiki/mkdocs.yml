@@ -127,7 +127,7 @@ markdown_extensions:
 #  Extra
 copyright: Copyright &copy; 2024 - PGodinho
 extra:
-  homepage: https://cet-network.netlify.app
+  homepage: https://cet-network.netlify.app/
   generator: true
   social:
     - icon: fontawesome/brands/square-github
