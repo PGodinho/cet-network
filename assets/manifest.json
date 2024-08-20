@@ -1,6 +1,6 @@
 {
-    "name": "CET dashboard",
-    "short_name": "CET-NETWORK",
+    "name": "CET-NETWORK",
+    "short_name": "CET",
     "start_url": "../",
     "display": "standalone",
     "background_color": "#ffffff",
