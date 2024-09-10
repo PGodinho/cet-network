@@ -352,8 +352,6 @@ Delete any entry that maps your hostname or FQDN to any IP besides the static IP
 
 Add an entry to map your host’s FQDN and static IP address.
 
-![1685437415966](image/Linux/1685437415966.png)
-
 Save the *hosts* (/etc/hosts) file and exit the editor.
 
 ### FQDN Resolution
