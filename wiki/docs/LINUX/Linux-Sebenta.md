@@ -5,7 +5,7 @@ icon: fontawesome/solid/book-skull
 
 ## Linux
 
-### [nixCraft](https://www.cyberciti.biz/)
+## [nixCraft](https://www.cyberciti.biz/)
 
 ---
 
