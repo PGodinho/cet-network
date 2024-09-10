@@ -1,3 +1,9 @@
+---
+title: Draw 2
+icon: fontawesome/solid/pencil
+author: €u
+---
+
 # Draw.io 2
 Rende o desenho direto da aplicação (.drawio#pag)
 
