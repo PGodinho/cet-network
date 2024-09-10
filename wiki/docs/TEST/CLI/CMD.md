@@ -270,9 +270,3 @@ FIREFOX KEYBOARD SHORTCUTS (WINDOWS / LINUX):
 > - [CTRL] + [-]   (Zoom out the content of the web page)
 > - [CTRL] + [0]   (reset the zooming of the web page content)
 > - [CTRL] + [u]   (open the tab for the web page source code)
-
-[-&gt; Linux cheat sheet](https://henkka.info/demo.ict/linux)
-[-&gt; Networking cheat sheet](https://henkka.info/demo.ict/osi)
-[-&gt; Screen resolution cheat sheet](https://henkka.info/demo.ict/resolutions)
-
-Updated: 21-06-23 (d/m/y)

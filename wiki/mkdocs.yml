@@ -1,7 +1,7 @@
 # Project information
 #####################
 site_name: DOCS-CET-Network
-site_url: https://cet-network.netlify.app
+site_url: https://cet-network.netlify.app/
 repo_url: https://github.com/PGodinho/cet-network
 site_description: Documents
 docs_dir: Docs
