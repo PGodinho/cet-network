@@ -1,26 +1,32 @@
-# [OSI - MODEL](https://en.wikipedia.org/wiki/OSI_model)
+---
+title: OSI
+icon: fontawesome/brands/osi
+author: €u
+---
+
+# :fontawesome-brands-osi: [OSI - MODEL](https://en.wikipedia.org/wiki/OSI_model)
 
 ## OSI - Descrição
 
-![OSI-1](../CET/image/OSI/OSI-1.png)
+![OSI-1](image/OSI/OSI-1.png)
 
 ---
 
 ## OSI - Exemplo
 
-![OSI-2](../CET/image/OSI/OSI-2.png)
+![OSI-2](image/OSI/OSI-2.png)
 
 ---
 
 ## OSI-TCP/IP
 
-![OSI-TCP/IP](../CET/image/OSI/OSI_3-tcp-ip-camadas.png)
+![OSI-TCP/IP](image/OSI/OSI_3-tcp-ip-camadas.png)
 
 ---
 
 ## Network Models
 
-![Network Models](../CET/image/OSI/network_models.png)
+![Network Models](image/OSI/network_models.png)
 
 ---
 

@@ -91,6 +91,41 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://cet-network.netlify.app/Network/</loc>
+         <lastmod>2024-09-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://cet-network.netlify.app/Network/OSI/</loc>
+         <lastmod>2024-09-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://cet-network.netlify.app/Network/Cisco/CET-Packet-Tracer-IOS/</loc>
+         <lastmod>2024-09-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://cet-network.netlify.app/Network/Cisco/Frame-Relay/</loc>
+         <lastmod>2024-09-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://cet-network.netlify.app/Network/Cisco/VLAN/</loc>
+         <lastmod>2024-09-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://cet-network.netlify.app/Network/Cisco/Voip/</loc>
+         <lastmod>2024-09-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://cet-network.netlify.app/TEST/</loc>
+         <lastmod>2024-09-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://cet-network.netlify.app/TEST/CET/</loc>
          <lastmod>2024-09-10</lastmod>
          <changefreq>daily</changefreq>
@@ -101,37 +136,7 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://cet-network.netlify.app/TEST/CET/OSI/</loc>
-         <lastmod>2024-09-10</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
          <loc>https://cet-network.netlify.app/TEST/CET/Audio/Audio/</loc>
-         <lastmod>2024-09-10</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://cet-network.netlify.app/TEST/CET/Network/</loc>
-         <lastmod>2024-09-10</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://cet-network.netlify.app/TEST/CET/Network/Cisco/CET-Packet-Tracer-IOS/</loc>
-         <lastmod>2024-09-10</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://cet-network.netlify.app/TEST/CET/Network/Cisco/Frame-Relay/</loc>
-         <lastmod>2024-09-10</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://cet-network.netlify.app/TEST/CET/Network/Cisco/VLAN/</loc>
-         <lastmod>2024-09-10</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://cet-network.netlify.app/TEST/CET/Network/Cisco/Voip/</loc>
          <lastmod>2024-09-10</lastmod>
          <changefreq>daily</changefreq>
     </url>

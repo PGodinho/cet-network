@@ -1,6 +1,14 @@
-# [Network](https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/7/html/networking_guide/index)
+---
+title: Network
+icon: fontawesome/solid/ethernet
+author: €u
+---
+# :fontawesome-solid-ethernet: [Network](https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/7/html/networking_guide/index)
 
-## [NETWORK INTERFACE CONTROLLER](https://en.wikipedia.org/wiki/Network_interface_controller)
+---
+## NIC
+
+### [NETWORK INTERFACE CONTROLLER](https://en.wikipedia.org/wiki/Network_interface_controller)
 
 **NIC** - Also known as a **Network Interface Card.**
 
@@ -16,15 +24,15 @@
 
 ### 568A & 568B
 
-![568A & 568B](../image/Ethernet/UTP-568.png)
+![568A & 568B](image/Ethernet/UTP-568.png)
 
 ---
 
-![568 - Straight](../image/Ethernet/RJ45_Straight_pinout.png)
+![568 - Straight](image/Ethernet/RJ45_Straight_pinout.png)
 
 ---
 
-![568 - Crossover](../image/Ethernet/RJ45_Crossover_pinout.png)
+![568 - Crossover](image/Ethernet/RJ45_Crossover_pinout.png)
 
 ---
 
@@ -32,14 +40,14 @@
 
 ## RS232 Pin Out
 
-![RS232](../image/RS232/RS232_PinOut.jpg)
+![RS232](image/RS232/RS232_PinOut.jpg)
 
 ---
 
 
 ### Serial Console Cable Pin Out
 
-![Serial Console Pin Out](../image/RS232/SerialConsoleCable.jpg)
+![Serial Console Pin Out](image/RS232/SerialConsoleCable.jpg)
 
 ---
 
@@ -60,7 +68,3 @@
 [Web Check](https://web-check.xyz/)
 
 ---
-
-
-
-
