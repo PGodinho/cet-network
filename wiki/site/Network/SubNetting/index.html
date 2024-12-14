@@ -12,22 +12,28 @@
         <meta name="author" content="€u">
       
       
+        <link rel="canonical" href="http://cet-network.netlify.app/Network/SubNetting/">
       
       
+        <link rel="prev" href="../OSI/">
       
-      <link rel="icon" href="/logo.svg">
+      
+        <link rel="next" href="../Cisco/CET-Packet-Tracer-IOS/">
+      
+      
+      <link rel="icon" href="../../logo.svg">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.44">
     
     
       
-        <title>DOCS-CET-Network</title>
+        <title>Subnet - DOCS-CET-Network</title>
       
     
     
-      <link rel="stylesheet" href="/assets/stylesheets/main.0253249f.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.0253249f.min.css">
       
         
-        <link rel="stylesheet" href="/assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -46,9 +52,9 @@
       
     
     
-      <link rel="stylesheet" href="/termynal.css">
+      <link rel="stylesheet" href="../../termynal.css">
     
-    <script>__md_scope=new URL("/",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -73,6 +79,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#ip-address-classes" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -85,9 +96,9 @@
 
 <header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="/../../" title="DOCS-CET-Network" class="md-header__button md-logo" aria-label="DOCS-CET-Network" data-md-component="logo">
+    <a href="../../../../" title="DOCS-CET-Network" class="md-header__button md-logo" aria-label="DOCS-CET-Network" data-md-component="logo">
       
-  <img src="/logo.svg" alt="logo">
+  <img src="../../logo.svg" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -104,7 +115,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              
+              Subnet
             
           </span>
         </div>
@@ -212,7 +223,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="/." class="md-tabs__link">
+      <a href="../.." class="md-tabs__link">
         
   
     
@@ -233,7 +244,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="/About/" class="md-tabs__link">
+        <a href="../../About/" class="md-tabs__link">
           
   
     
@@ -255,7 +266,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="/DRAW.io/" class="md-tabs__link">
+        <a href="../../DRAW.io/" class="md-tabs__link">
           
   
     
@@ -277,7 +288,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="/LINUX/" class="md-tabs__link">
+        <a href="../../LINUX/" class="md-tabs__link">
           
   
     
@@ -295,11 +306,13 @@
         
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="/Network/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../" class="md-tabs__link">
           
   
     
@@ -321,7 +334,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="/TEST/" class="md-tabs__link">
+        <a href="../../TEST/" class="md-tabs__link">
           
   
     
@@ -364,9 +377,9 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="/../../" title="DOCS-CET-Network" class="md-nav__button md-logo" aria-label="DOCS-CET-Network" data-md-component="logo">
+    <a href="../../../../" title="DOCS-CET-Network" class="md-nav__button md-logo" aria-label="DOCS-CET-Network" data-md-component="logo">
       
-  <img src="/logo.svg" alt="logo">
+  <img src="../../logo.svg" alt="logo">
 
     </a>
     DOCS-CET-Network
@@ -393,7 +406,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/." class="md-nav__link">
+      <a href="../.." class="md-nav__link">
         
   
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M575.8 255.5c0 18-15 32.1-32 32.1h-32l.7 160.2c0 2.7-.2 5.4-.5 8.1v16.2c0 22.1-17.9 40-40 40h-16c-1.1 0-2.2 0-3.3-.1-1.4.1-2.8.1-4.2.1L416 512h-24c-22.1 0-40-17.9-40-40v-88c0-17.7-14.3-32-32-32h-64c-17.7 0-32 14.3-32 32v88c0 22.1-17.9 40-40 40h-55.9c-1.5 0-3-.1-4.5-.2-1.2.1-2.4.2-3.6.2h-16c-22.1 0-40-17.9-40-40V360c0-.9 0-1.9.1-2.8v-69.7h-32c-18 0-32-14-32-32.1 0-9 3-17 10-24L266.4 8c7-7 15-8 22-8s15 2 21 7l255.4 224.5c8 7 12 15 11 24"/></svg>
@@ -438,7 +451,7 @@
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="/About/" class="md-nav__link ">
+            <a href="../../About/" class="md-nav__link ">
               
   
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M224 256a128 128 0 1 0 0-256 128 128 0 1 0 0 256m-45.7 48C79.8 304 0 383.8 0 482.3 0 498.7 13.3 512 29.7 512h388.6c16.4 0 29.7-13.3 29.7-29.7 0-98.5-79.8-178.3-178.3-178.3z"/></svg>
@@ -502,7 +515,7 @@
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="/DRAW.io/" class="md-nav__link ">
+            <a href="../../DRAW.io/" class="md-nav__link ">
               
   
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="m410.3 231 11.3-11.3-33.9-33.9-62.1-62.1-33.9-33.9-11.3 11.3-22.6 22.6L58.6 322.9c-10.4 10.4-18 23.3-22.2 37.4L1 480.7c-2.5 8.4-.2 17.5 6.1 23.7s15.3 8.5 23.7 6.1l120.3-35.4c14.1-4.2 27-11.8 37.4-22.2l199.2-199.2zM160 399.4l-9.1 22.7c-4 3.1-8.5 5.4-13.3 6.9l-78.2 23 23-78.1c1.4-4.9 3.8-9.4 6.9-13.3l22.7-9.1v32c0 8.8 7.2 16 16 16h32zM362.7 18.7l-14.4 14.5-22.6 22.6-11.4 11.3 33.9 33.9 62.1 62.1 33.9 33.9 11.3-11.3 22.6-22.6 14.5-14.5c25-25 25-65.5 0-90.5l-39.3-39.4c-25-25-65.5-25-90.5 0zm-47.4 168-144 144c-6.2 6.2-16.4 6.2-22.6 0s-6.2-16.4 0-22.6l144-144c6.2-6.2 16.4-6.2 22.6 0s6.2 16.4 0 22.6"/></svg>
@@ -537,7 +550,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/DRAW.io/draws-01-interact/" class="md-nav__link">
+      <a href="../../DRAW.io/draws-01-interact/" class="md-nav__link">
         
   
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="m410.3 231 11.3-11.3-33.9-33.9-62.1-62.1-33.9-33.9-11.3 11.3-22.6 22.6L58.6 322.9c-10.4 10.4-18 23.3-22.2 37.4L1 480.7c-2.5 8.4-.2 17.5 6.1 23.7s15.3 8.5 23.7 6.1l120.3-35.4c14.1-4.2 27-11.8 37.4-22.2l199.2-199.2zM160 399.4l-9.1 22.7c-4 3.1-8.5 5.4-13.3 6.9l-78.2 23 23-78.1c1.4-4.9 3.8-9.4 6.9-13.3l22.7-9.1v32c0 8.8 7.2 16 16 16h32zM362.7 18.7l-14.4 14.5-22.6 22.6-11.4 11.3 33.9 33.9 62.1 62.1 33.9 33.9 11.3-11.3 22.6-22.6 14.5-14.5c25-25 25-65.5 0-90.5l-39.3-39.4c-25-25-65.5-25-90.5 0zm-47.4 168-144 144c-6.2 6.2-16.4 6.2-22.6 0s-6.2-16.4 0-22.6l144-144c6.2-6.2 16.4-6.2 22.6 0s6.2 16.4 0 22.6"/></svg>
@@ -560,7 +573,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/DRAW.io/draws-02-statict/" class="md-nav__link">
+      <a href="../../DRAW.io/draws-02-statict/" class="md-nav__link">
         
   
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="m410.3 231 11.3-11.3-33.9-33.9-62.1-62.1-33.9-33.9-11.3 11.3-22.6 22.6L58.6 322.9c-10.4 10.4-18 23.3-22.2 37.4L1 480.7c-2.5 8.4-.2 17.5 6.1 23.7s15.3 8.5 23.7 6.1l120.3-35.4c14.1-4.2 27-11.8 37.4-22.2l199.2-199.2zM160 399.4l-9.1 22.7c-4 3.1-8.5 5.4-13.3 6.9l-78.2 23 23-78.1c1.4-4.9 3.8-9.4 6.9-13.3l22.7-9.1v32c0 8.8 7.2 16 16 16h32zM362.7 18.7l-14.4 14.5-22.6 22.6-11.4 11.3 33.9 33.9 62.1 62.1 33.9 33.9 11.3-11.3 22.6-22.6 14.5-14.5c25-25 25-65.5 0-90.5l-39.3-39.4c-25-25-65.5-25-90.5 0zm-47.4 168-144 144c-6.2 6.2-16.4 6.2-22.6 0s-6.2-16.4 0-22.6l144-144c6.2-6.2 16.4-6.2 22.6 0s6.2 16.4 0 22.6"/></svg>
@@ -637,7 +650,7 @@
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="/LINUX/" class="md-nav__link ">
+            <a href="../../LINUX/" class="md-nav__link ">
               
   
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M220.8 123.3c1 .5 1.8 1.7 3 1.7 1.1 0 2.8-.4 2.9-1.5.2-1.4-1.9-2.3-3.2-2.9-1.7-.7-3.9-1-5.5-.1-.4.2-.8.7-.6 1.1.3 1.3 2.3 1.1 3.4 1.7m-21.9 1.7c1.2 0 2-1.2 3-1.7 1.1-.6 3.1-.4 3.5-1.6.2-.4-.2-.9-.6-1.1-1.6-.9-3.8-.6-5.5.1-1.3.6-3.4 1.5-3.2 2.9.1 1 1.8 1.5 2.8 1.4M420 403.8c-3.6-4-5.3-11.6-7.2-19.7-1.8-8.1-3.9-16.8-10.5-22.4-1.3-1.1-2.6-2.1-4-2.9-1.3-.8-2.7-1.5-4.1-2 9.2-27.3 5.6-54.5-3.7-79.1-11.4-30.1-31.3-56.4-46.5-74.4-17.1-21.5-33.7-41.9-33.4-72C311.1 85.4 315.7.1 234.8 0 132.4-.2 158 103.4 156.9 135.2c-1.7 23.4-6.4 41.8-22.5 64.7-18.9 22.5-45.5 58.8-58.1 96.7-6 17.9-8.8 36.1-6.2 53.3-6.5 5.8-11.4 14.7-16.6 20.2-4.2 4.3-10.3 5.9-17 8.3s-14 6-18.5 14.5c-2.1 3.9-2.8 8.1-2.8 12.4 0 3.9.6 7.9 1.2 11.8 1.2 8.1 2.5 15.7.8 20.8-5.2 14.4-5.9 24.4-2.2 31.7 3.8 7.3 11.4 10.5 20.1 12.3 17.3 3.6 40.8 2.7 59.3 12.5 19.8 10.4 39.9 14.1 55.9 10.4 11.6-2.6 21.1-9.6 25.9-20.2 12.5-.1 26.3-5.4 48.3-6.6 14.9-1.2 33.6 5.3 55.1 4.1.6 2.3 1.4 4.6 2.5 6.7v.1c8.3 16.7 23.8 24.3 40.3 23 16.6-1.3 34.1-11 48.3-27.9 13.6-16.4 36-23.2 50.9-32.2 7.4-4.5 13.4-10.1 13.9-18.3.4-8.2-4.4-17.3-15.5-29.7M223.7 87.3c9.8-22.2 34.2-21.8 44-.4 6.5 14.2 3.6 30.9-4.3 40.4-1.6-.8-5.9-2.6-12.6-4.9 1.1-1.2 3.1-2.7 3.9-4.6 4.8-11.8-.2-27-9.1-27.3-7.3-.5-13.9 10.8-11.8 23-4.1-2-9.4-3.5-13-4.4-1-6.9-.3-14.6 2.9-21.8M183 75.8c10.1 0 20.8 14.2 19.1 33.5-3.5 1-7.1 2.5-10.2 4.6 1.2-8.9-3.3-20.1-9.6-19.6-8.4.7-9.8 21.2-1.8 28.1 1 .8 1.9-.2-5.9 5.5-15.6-14.6-10.5-52.1 8.4-52.1m-13.6 60.7c6.2-4.6 13.6-10 14.1-10.5 4.7-4.4 13.5-14.2 27.9-14.2 7.1 0 15.6 2.3 25.9 8.9 6.3 4.1 11.3 4.4 22.6 9.3 8.4 3.5 13.7 9.7 10.5 18.2-2.6 7.1-11 14.4-22.7 18.1-11.1 3.6-19.8 16-38.2 14.9-3.9-.2-7-1-9.6-2.1-8-3.5-12.2-10.4-20-15-8.6-4.8-13.2-10.4-14.7-15.3q-2.1-7.35 4.2-12.3m3.3 334c-2.7 35.1-43.9 34.4-75.3 18-29.9-15.8-68.6-6.5-76.5-21.9-2.4-4.7-2.4-12.7 2.6-26.4v-.2c2.4-7.6.6-16-.6-23.9-1.2-7.8-1.8-15 .9-20 3.5-6.7 8.5-9.1 14.8-11.3 10.3-3.7 11.8-3.4 19.6-9.9 5.5-5.7 9.5-12.9 14.3-18 5.1-5.5 10-8.1 17.7-6.9 8.1 1.2 15.1 6.8 21.9 16l19.6 35.6c9.5 19.9 43.1 48.4 41 68.9m-1.4-25.9c-4.1-6.6-9.6-13.6-14.4-19.6 7.1 0 14.2-2.2 16.7-8.9 2.3-6.2 0-14.9-7.4-24.9-13.5-18.2-38.3-32.5-38.3-32.5-13.5-8.4-21.1-18.7-24.6-29.9s-3-23.3-.3-35.2c5.2-22.9 18.6-45.2 27.2-59.2 2.3-1.7.8 3.2-8.7 20.8-8.5 16.1-24.4 53.3-2.6 82.4.6-20.7 5.5-41.8 13.8-61.5 12-27.4 37.3-74.9 39.3-112.7 1.1.8 4.6 3.2 6.2 4.1 4.6 2.7 8.1 6.7 12.6 10.3 12.4 10 28.5 9.2 42.4 1.2 6.2-3.5 11.2-7.5 15.9-9 9.9-3.1 17.8-8.6 22.3-15 7.7 30.4 25.7 74.3 37.2 95.7 6.1 11.4 18.3 35.5 23.6 64.6 3.3-.1 7 .4 10.9 1.4 13.8-35.7-11.7-74.2-23.3-84.9-4.7-4.6-4.9-6.6-2.6-6.5 12.6 11.2 29.2 33.7 35.2 59 2.8 11.6 3.3 23.7.4 35.7 16.4 6.8 35.9 17.9 30.7 34.8-2.2-.1-3.2 0-4.2 0 3.2-10.1-3.9-17.6-22.8-26.1-19.6-8.6-36-8.6-38.3 12.5-12.1 4.2-18.3 14.7-21.4 27.3-2.8 11.2-3.6 24.7-4.4 39.9-.5 7.7-3.6 18-6.8 29-32.1 22.9-76.7 32.9-114.3 7.2m257.4-11.5c-.9 16.8-41.2 19.9-63.2 46.5-13.2 15.7-29.4 24.4-43.6 25.5s-26.5-4.8-33.7-19.3c-4.7-11.1-2.4-23.1 1.1-36.3 3.7-14.2 9.2-28.8 9.9-40.6.8-15.2 1.7-28.5 4.2-38.7 2.6-10.3 6.6-17.2 13.7-21.1.3-.2.7-.3 1-.5.8 13.2 7.3 26.6 18.8 29.5 12.6 3.3 30.7-7.5 38.4-16.3 9-.3 15.7-.9 22.6 5.1 9.9 8.5 7.1 30.3 17.1 41.6 10.6 11.6 14 19.5 13.7 24.6M173.3 148.7c2 1.9 4.7 4.5 8 7.1 6.6 5.2 15.8 10.6 27.3 10.6 11.6 0 22.5-5.9 31.8-10.8 4.9-2.6 10.9-7 14.8-10.4s5.9-6.3 3.1-6.6-2.6 2.6-6 5.1c-4.4 3.2-9.7 7.4-13.9 9.8-7.4 4.2-19.5 10.2-29.9 10.2s-18.7-4.8-24.9-9.7c-3.1-2.5-5.7-5-7.7-6.9-1.5-1.4-1.9-4.6-4.3-4.9-1.4-.1-1.8 3.7 1.7 6.5"/></svg>
@@ -672,7 +685,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/LINUX/Linux-00/" class="md-nav__link">
+      <a href="../../LINUX/Linux-00/" class="md-nav__link">
         
   
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M64 32C64 14.3 49.7 0 32 0S0 14.3 0 32v352c0 35.3 28.7 64 64 64h192v-64H64V160h192V96H64zm224 160c0 17.7 14.3 32 32 32h224c17.7 0 32-14.3 32-32V64c0-17.7-14.3-32-32-32h-98.7c-8.5 0-16.6-3.4-22.6-9.4L409.4 9.4c-6-6-14.1-9.4-22.6-9.4H320c-17.7 0-32 14.3-32 32zm0 288c0 17.7 14.3 32 32 32h224c17.7 0 32-14.3 32-32V352c0-17.7-14.3-32-32-32h-98.7c-8.5 0-16.6-3.4-22.6-9.4l-13.3-13.3c-6-6-14.1-9.4-22.6-9.4l-66.8.1c-17.7 0-32 14.3-32 32z"/></svg>
@@ -695,7 +708,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/LINUX/Linux-01-Window%20Manager/" class="md-nav__link">
+      <a href="../../LINUX/Linux-01-Window%20Manager/" class="md-nav__link">
         
   
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M64 32C28.7 32 0 60.7 0 96v320c0 35.3 28.7 64 64 64h384c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64zm32 64h320c17.7 0 32 14.3 32 32s-14.3 32-32 32H96c-17.7 0-32-14.3-32-32s14.3-32 32-32"/></svg>
@@ -718,7 +731,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/LINUX/Linux-02-Network/" class="md-nav__link">
+      <a href="../../LINUX/Linux-02-Network/" class="md-nav__link">
         
   
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M256 64h128v64H256zM240 0c-26.5 0-48 21.5-48 48v96c0 26.5 21.5 48 48 48h48v32H32c-17.7 0-32 14.3-32 32s14.3 32 32 32h96v32H80c-26.5 0-48 21.5-48 48v96c0 26.5 21.5 48 48 48h160c26.5 0 48-21.5 48-48v-96c0-26.5-21.5-48-48-48h-48v-32h256v32h-48c-26.5 0-48 21.5-48 48v96c0 26.5 21.5 48 48 48h160c26.5 0 48-21.5 48-48v-96c0-26.5-21.5-48-48-48h-48v-32h96c17.7 0 32-14.3 32-32s-14.3-32-32-32H352v-32h48c26.5 0 48-21.5 48-48V48c0-26.5-21.5-48-48-48zM96 448v-64h128v64zm320-64h128v64H416z"/></svg>
@@ -741,7 +754,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/LINUX/Linux-02-SSH/" class="md-nav__link">
+      <a href="../../LINUX/Linux-02-SSH/" class="md-nav__link">
         
   
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M9.4 86.6c-12.5-12.5-12.5-32.7 0-45.2s32.8-12.5 45.3 0l192 192c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L178.7 256zM256 416h288c17.7 0 32 14.3 32 32s-14.3 32-32 32H256c-17.7 0-32-14.3-32-32s14.3-32 32-32"/></svg>
@@ -764,7 +777,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/LINUX/Linux-02-SSL/" class="md-nav__link">
+      <a href="../../LINUX/Linux-02-SSL/" class="md-nav__link">
         
   
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M211 7.3C205 1 196-1.4 187.6.8s-14.9 8.9-17.1 17.3l-15.8 62.5-62-17.5c-8.4-2.4-17.4 0-23.5 6.1s-8.5 15.1-6.1 23.5l17.5 62-62.5 15.9c-8.4 2.1-15 8.7-17.3 17.1S1 205 7.3 211l46.2 45-46.2 45c-6.3 6-8.7 15-6.5 23.4s8.9 14.9 17.3 17.1l62.5 15.8-17.5 62c-2.4 8.4 0 17.4 6.1 23.5s15.1 8.5 23.5 6.1l62-17.5 15.8 62.5c2.1 8.4 8.7 15 17.1 17.3s17.3-.2 23.4-6.4l45-46.2 45 46.2c6.1 6.2 15 8.7 23.4 6.4s14.9-8.9 17.1-17.3l15.8-62.5 62 17.5c8.4 2.4 17.4 0 23.5-6.1s8.5-15.1 6.1-23.5l-17.5-62 62.5-15.8c8.4-2.1 15-8.7 17.3-17.1s-.2-17.4-6.4-23.4l-46.2-45 46.2-45c6.2-6.1 8.7-15 6.4-23.4s-8.9-14.9-17.3-17.1l-62.5-15.8 17.5-62c2.4-8.4 0-17.4-6.1-23.5s-15.1-8.5-23.5-6.1l-62 17.5-15.9-62.5c-2.1-8.4-8.7-15-17.1-17.3S307 1 301 7.3l-45 46.2z"/></svg>
@@ -787,7 +800,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/LINUX/Linux-03-FireWall/" class="md-nav__link">
+      <a href="../../LINUX/Linux-03-FireWall/" class="md-nav__link">
         
   
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M256 0c4.6 0 9.2 1 13.4 2.9l188.3 79.9c22 9.3 38.4 31 38.3 57.2-.5 99.2-41.3 280.7-213.6 363.2-16.7 8-36.1 8-52.8 0C57.3 420.7 16.5 239.2 16 140c-.1-26.2 16.3-47.9 38.3-57.2L242.7 2.9C246.8 1 251.4 0 256 0m0 66.8v378.1C394 378 431.1 230.1 432 141.4z"/></svg>
@@ -810,7 +823,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/LINUX/Linux-10-Ubuntu-Server/" class="md-nav__link">
+      <a href="../../LINUX/Linux-10-Ubuntu-Server/" class="md-nav__link">
         
   
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M64 32C28.7 32 0 60.7 0 96v64c0 35.3 28.7 64 64 64h384c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64zm280 72a24 24 0 1 1 0 48 24 24 0 1 1 0-48m48 24a24 24 0 1 1 48 0 24 24 0 1 1-48 0M64 288c-35.3 0-64 28.7-64 64v64c0 35.3 28.7 64 64 64h384c35.3 0 64-28.7 64-64v-64c0-35.3-28.7-64-64-64zm280 72a24 24 0 1 1 0 48 24 24 0 1 1 0-48m56 24a24 24 0 1 1 48 0 24 24 0 1 1-48 0"/></svg>
@@ -833,7 +846,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/LINUX/Linux-11-AD-DC/" class="md-nav__link">
+      <a href="../../LINUX/Linux-11-AD-DC/" class="md-nav__link">
         
   
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M144 160a80 80 0 1 0 0-160 80 80 0 1 0 0 160m368 0a80 80 0 1 0 0-160 80 80 0 1 0 0 160M0 298.7C0 310.4 9.6 320 21.3 320h214c-26.6-23.5-43.3-57.8-43.3-96 0-7.6.7-15 1.9-22.3-13.6-6.3-28.7-9.7-44.6-9.7h-42.7C47.8 192 0 239.8 0 298.7M320 320c24 0 45.9-8.8 62.7-23.3 2.5-3.7 5.2-7.3 8-10.7 2.7-3.3 5.7-6.1 9-8.3C410 262.3 416 243.9 416 224c0-53-43-96-96-96s-96 43-96 96 43 96 96 96m65.4 60.2c-10.3-5.9-18.1-16.2-20.8-28.2H261.4C187.7 352 128 411.7 128 485.3c0 14.7 11.9 26.7 26.7 26.7h300.6c-2.1-5.2-3.2-10.9-3.2-16.4v-3c-1.3-.7-2.7-1.5-4-2.3l-2.6 1.5c-16.8 9.7-40.5 8-54.7-9.7-4.5-5.6-8.6-11.5-12.4-17.6l-.1-.2-.1-.2-2.4-4.1-.1-.2-.1-.2c-3.4-6.2-6.4-12.6-9-19.3-8.2-21.2 2.2-42.6 19-52.3l2.7-1.5v-4.6l-2.7-1.5zM533.3 192h-42.7c-15.9 0-31 3.5-44.6 9.7 1.3 7.2 1.9 14.7 1.9 22.3 0 17.4-3.5 33.9-9.7 49 2.5.9 4.9 2 7.1 3.3l2.6 1.5c1.3-.8 2.6-1.6 4-2.3v-3c0-19.4 13.3-39.1 35.8-42.6 7.9-1.2 16-1.9 24.2-1.9s16.3.6 24.2 1.9c22.5 3.5 35.8 23.2 35.8 42.6v3c1.3.7 2.7 1.5 4 2.3l2.6-1.5c16.8-9.7 40.5-8 54.7 9.7 2.3 2.8 4.5 5.8 6.6 8.7-2.1-57.1-49-102.7-106.6-102.7zm91.3 163.9c6.3-3.6 9.5-11.1 6.8-18-2.1-5.5-4.6-10.8-7.4-15.9l-2.3-4c-3.1-5.1-6.5-9.9-10.2-14.5-4.6-5.7-12.7-6.7-19-3l-2.9 1.7c-9.2 5.3-20.4 4-29.6-1.3s-16.1-14.5-16.1-25.1v-3.4c0-7.3-4.9-13.8-12.1-14.9-6.5-1-13.1-1.5-19.9-1.5s-13.4.5-19.9 1.5c-7.2 1.1-12.1 7.6-12.1 14.9v3.4c0 10.6-6.9 19.8-16.1 25.1s-20.4 6.6-29.6 1.3l-2.9-1.7c-6.3-3.6-14.4-2.6-19 3-3.7 4.6-7.1 9.5-10.2 14.6l-2.3 3.9c-2.8 5.1-5.3 10.4-7.4 15.9-2.6 6.8.5 14.3 6.8 17.9l2.9 1.7c9.2 5.3 13.7 15.8 13.7 26.4s-4.5 21.1-13.7 26.4l-3 1.7c-6.3 3.6-9.5 11.1-6.8 17.9 2.1 5.5 4.6 10.7 7.4 15.8l2.4 4.1c3 5.1 6.4 9.9 10.1 14.5 4.6 5.7 12.7 6.7 19 3l2.9-1.7c9.2-5.3 20.4-4 29.6 1.3s16.1 14.5 16.1 25.1v3.4c0 7.3 4.9 13.8 12.1 14.9 6.5 1 13.1 1.5 19.9 1.5s13.4-.5 19.9-1.5c7.2-1.1 12.1-7.6 12.1-14.9V492c0-10.6 6.9-19.8 16.1-25.1s20.4-6.6 29.6-1.3l2.9 1.7c6.3 3.6 14.4 2.6 19-3 3.7-4.6 7.1-9.4 10.1-14.5l2.4-4.2c2.8-5.1 5.3-10.3 7.4-15.8 2.6-6.8-.5-14.3-6.8-17.9l-3-1.7c-9.2-5.3-13.7-15.8-13.7-26.4s4.5-21.1 13.7-26.4l3-1.7zM472 384a40 40 0 1 1 80 0 40 40 0 1 1-80 0"/></svg>
@@ -856,7 +869,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/LINUX/Linux-11-Mail/" class="md-nav__link">
+      <a href="../../LINUX/Linux-11-Mail/" class="md-nav__link">
         
   
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4l217.6 163.2c11.4 8.5 27 8.5 38.4 0l217.6-163.2c12.1-9.1 19.2-23.3 19.2-38.4 0-26.5-21.5-48-48-48zM0 176v208c0 35.3 28.7 64 64 64h384c35.3 0 64-28.7 64-64V176L294.4 339.2a63.9 63.9 0 0 1-76.8 0z"/></svg>
@@ -879,7 +892,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/LINUX/Linux-11-Samba/" class="md-nav__link">
+      <a href="../../LINUX/Linux-11-Samba/" class="md-nav__link">
         
   
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M64 32C28.7 32 0 60.7 0 96v320c0 35.3 28.7 64 64 64h320c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64zm320 128c0 35.3-28.7 64-64 64-15.4 0-29.5-5.4-40.6-14.5L194.1 256l85.3 46.5c11-9.1 25.2-14.5 40.6-14.5 35.3 0 64 28.7 64 64s-28.7 64-64 64-64-28.7-64-64c0-2.5.1-4.9.4-7.3L174.5 300c-11.7 12.3-28.2 20-46.5 20-35.3 0-64-28.7-64-64s28.7-64 64-64c18.3 0 34.8 7.7 46.5 20l81.9-44.7c-.3-2.4-.4-4.9-.4-7.3 0-35.3 28.7-64 64-64s64 28.7 64 64"/></svg>
@@ -902,7 +915,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/LINUX/Linux-99-Cheat_Sheet/" class="md-nav__link">
+      <a href="../../LINUX/Linux-99-Cheat_Sheet/" class="md-nav__link">
         
   
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M0 96c0-35.3 28.7-64 64-64h448c35.3 0 64 28.7 64 64v320c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64zm128 192a32 32 0 1 0 0-64 32 32 0 1 0 0 64m32-128a32 32 0 1 0-64 0 32 32 0 1 0 64 0m-32 224a32 32 0 1 0 0-64 32 32 0 1 0 0 64m96-248c-13.3 0-24 10.7-24 24s10.7 24 24 24h224c13.3 0 24-10.7 24-24s-10.7-24-24-24zm0 96c-13.3 0-24 10.7-24 24s10.7 24 24 24h224c13.3 0 24-10.7 24-24s-10.7-24-24-24zm0 96c-13.3 0-24 10.7-24 24s10.7 24 24 24h224c13.3 0 24-10.7 24-24s-10.7-24-24-24z"/></svg>
@@ -925,7 +938,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/LINUX/Linux-Sebenta/" class="md-nav__link">
+      <a href="../../LINUX/Linux-Sebenta/" class="md-nav__link">
         
   
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M0 96C0 43 43 0 96 0h320c17.7 0 32 14.3 32 32v320c0 17.7-14.3 32-32 32v64c17.7 0 32 14.3 32 32s-14.3 32-32 32H96c-53 0-96-43-96-96zm64 320c0 17.7 14.3 32 32 32h256v-64H96c-17.7 0-32 14.3-32 32m256-304c0-35.3-35.8-64-80-64s-80 28.7-80 64c0 20.9 12.6 39.5 32 51.2V176c0 8.8 7.2 16 16 16h64c8.8 0 16-7.2 16-16v-12.8c19.4-11.7 32-30.3 32-51.2M208 96a16 16 0 1 1 0 32 16 16 0 1 1 0-32m48 16a16 16 0 1 1 32 0 16 16 0 1 1-32 0m-121.7 97.3c-8.1-3.5-17.5.3-21 8.4s.3 17.5 8.4 21l77.7 33.3-77.7 33.3c-8.1 3.5-11.9 12.9-8.4 21s12.9 11.9 21 8.4L240 289.4l105.7 45.3c8.1 3.5 17.5-.3 21-8.4s-.3-17.5-8.4-21L280.6 272l77.7-33.3c8.1-3.5 11.9-12.9 8.4-21s-12.9-11.9-21-8.4L240 254.6z"/></svg>
@@ -952,6 +965,8 @@
       
   
   
+    
+  
   
   
     
@@ -970,21 +985,24 @@
     
     
       
+        
+        
+      
       
         
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
         
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="/Network/" class="md-nav__link ">
+            <a href="../" class="md-nav__link ">
               
   
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M0 224v192c0 17.7 14.3 32 32 32h64V336c0-8.8 7.2-16 16-16s16 7.2 16 16v112h64V336c0-8.8 7.2-16 16-16s16 7.2 16 16v112h64V336c0-8.8 7.2-16 16-16s16 7.2 16 16v112h64V336c0-8.8 7.2-16 16-16s16 7.2 16 16v112h64c17.7 0 32-14.3 32-32V224c0-17.7-14.3-32-32-32h-32v-32c0-17.7-14.3-32-32-32h-32V96c0-17.7-14.3-32-32-32H160c-17.7 0-32 14.3-32 32v32H96c-17.7 0-32 14.3-32 32v32H32c-17.7 0-32 14.3-32 32"/></svg>
@@ -997,13 +1015,13 @@
             </a>
             
               
-              <label class="md-nav__link " for="__nav_5" id="__nav_5_label" tabindex="0">
+              <label class="md-nav__link " for="__nav_5" id="__nav_5_label" tabindex="">
                 <span class="md-nav__icon md-icon"></span>
               </label>
             
           </div>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_5">
             <span class="md-nav__icon md-icon"></span>
             Network
@@ -1019,7 +1037,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/Network/OSI/" class="md-nav__link">
+      <a href="../OSI/" class="md-nav__link">
         
   
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M8 266.44C10.3 130.64 105.4 34 221.8 18.34c138.8-18.6 255.6 75.8 278 201.1 21.3 118.8-44 230-151.6 274-9.3 3.8-14.4 1.7-18-7.7q-26.7-69.45-53.4-139c-3.1-8.1-1-13.2 7-16.8 24.2-11 39.3-29.4 43.3-55.8a71.47 71.47 0 0 0-64.5-82.2c-39-3.4-71.8 23.7-77.5 59.7-5.2 33 11.1 63.7 41.9 77.7 9.6 4.4 11.5 8.6 7.8 18.4q-26.85 69.9-53.7 139.9c-2.6 6.9-8.3 9.3-15.5 6.5-52.6-20.3-101.4-61-130.8-119-24.9-49.2-25.2-87.7-26.8-108.7m20.9-1.9c.4 6.6.6 14.3 1.3 22.1 6.3 71.9 49.6 143.5 131 183.1 3.2 1.5 4.4.8 5.6-2.3q22.35-58.65 45-117.3c1.3-3.3.6-4.8-2.4-6.7-31.6-19.9-47.3-48.5-45.6-86 1-21.6 9.3-40.5 23.8-56.3 30-32.7 77-39.8 115.5-17.6a91.64 91.64 0 0 1 45.2 90.4c-3.6 30.6-19.3 53.9-45.7 69.8-2.7 1.6-3.5 2.9-2.3 6q22.8 58.8 45.2 117.7c1.2 3.1 2.4 3.8 5.6 2.3 35.5-16.6 65.2-40.3 88.1-72 34.8-48.2 49.1-101.9 42.3-161-13.7-117.5-119.4-214.8-255.5-198-106.1 13-195.3 102.5-197.1 225.8"/></svg>
@@ -1039,10 +1057,30 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="/Network/SubNetting/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M8 266.44C10.3 130.64 105.4 34 221.8 18.34c138.8-18.6 255.6 75.8 278 201.1 21.3 118.8-44 230-151.6 274-9.3 3.8-14.4 1.7-18-7.7q-26.7-69.45-53.4-139c-3.1-8.1-1-13.2 7-16.8 24.2-11 39.3-29.4 43.3-55.8a71.47 71.47 0 0 0-64.5-82.2c-39-3.4-71.8 23.7-77.5 59.7-5.2 33 11.1 63.7 41.9 77.7 9.6 4.4 11.5 8.6 7.8 18.4q-26.85 69.9-53.7 139.9c-2.6 6.9-8.3 9.3-15.5 6.5-52.6-20.3-101.4-61-130.8-119-24.9-49.2-25.2-87.7-26.8-108.7m20.9-1.9c.4 6.6.6 14.3 1.3 22.1 6.3 71.9 49.6 143.5 131 183.1 3.2 1.5 4.4.8 5.6-2.3q22.35-58.65 45-117.3c1.3-3.3.6-4.8-2.4-6.7-31.6-19.9-47.3-48.5-45.6-86 1-21.6 9.3-40.5 23.8-56.3 30-32.7 77-39.8 115.5-17.6a91.64 91.64 0 0 1 45.2 90.4c-3.6 30.6-19.3 53.9-45.7 69.8-2.7 1.6-3.5 2.9-2.3 6q22.8 58.8 45.2 117.7c1.2 3.1 2.4 3.8 5.6 2.3 35.5-16.6 65.2-40.3 88.1-72 34.8-48.2 49.1-101.9 42.3-161-13.7-117.5-119.4-214.8-255.5-198-106.1 13-195.3 102.5-197.1 225.8"/></svg>
+  
+  <span class="md-ellipsis">
+    Subnet
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M8 266.44C10.3 130.64 105.4 34 221.8 18.34c138.8-18.6 255.6 75.8 278 201.1 21.3 118.8-44 230-151.6 274-9.3 3.8-14.4 1.7-18-7.7q-26.7-69.45-53.4-139c-3.1-8.1-1-13.2 7-16.8 24.2-11 39.3-29.4 43.3-55.8a71.47 71.47 0 0 0-64.5-82.2c-39-3.4-71.8 23.7-77.5 59.7-5.2 33 11.1 63.7 41.9 77.7 9.6 4.4 11.5 8.6 7.8 18.4q-26.85 69.9-53.7 139.9c-2.6 6.9-8.3 9.3-15.5 6.5-52.6-20.3-101.4-61-130.8-119-24.9-49.2-25.2-87.7-26.8-108.7m20.9-1.9c.4 6.6.6 14.3 1.3 22.1 6.3 71.9 49.6 143.5 131 183.1 3.2 1.5 4.4.8 5.6-2.3q22.35-58.65 45-117.3c1.3-3.3.6-4.8-2.4-6.7-31.6-19.9-47.3-48.5-45.6-86 1-21.6 9.3-40.5 23.8-56.3 30-32.7 77-39.8 115.5-17.6a91.64 91.64 0 0 1 45.2 90.4c-3.6 30.6-19.3 53.9-45.7 69.8-2.7 1.6-3.5 2.9-2.3 6q22.8 58.8 45.2 117.7c1.2 3.1 2.4 3.8 5.6 2.3 35.5-16.6 65.2-40.3 88.1-72 34.8-48.2 49.1-101.9 42.3-161-13.7-117.5-119.4-214.8-255.5-198-106.1 13-195.3 102.5-197.1 225.8"/></svg>
@@ -1053,6 +1091,75 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#ip-address-classes" class="md-nav__link">
+    <span class="md-ellipsis">
+      IP address classes
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#private-ipv4-address-ranges" class="md-nav__link">
+    <span class="md-ellipsis">
+      Private IPv4 address ranges
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Private IPv4 address ranges">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#private-ip-address-ranges" class="md-nav__link">
+    <span class="md-ellipsis">
+      Private IP address ranges
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ipv4-subnets-sheet" class="md-nav__link">
+    <span class="md-ellipsis">
+      IPv4 Subnets Sheet
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#subnet-calculator" class="md-nav__link">
+    <span class="md-ellipsis">
+      Subnet Calculator
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1080,17 +1187,20 @@
       
       
         
+          
+          
+        
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
       
         
         
         <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_4" >
         
           
-          <label class="md-nav__link" for="__nav_5_4" id="__nav_5_4_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_5_4" id="__nav_5_4_label" tabindex="">
             
   
   <span class="md-ellipsis">
@@ -1115,7 +1225,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/Network/Cisco/CET-Packet-Tracer-IOS/" class="md-nav__link">
+      <a href="../Cisco/CET-Packet-Tracer-IOS/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1136,7 +1246,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/Network/Cisco/Frame-Relay/" class="md-nav__link">
+      <a href="../Cisco/Frame-Relay/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1157,7 +1267,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/Network/Cisco/VLAN/" class="md-nav__link">
+      <a href="../Cisco/VLAN/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1178,7 +1288,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/Network/Cisco/Voip/" class="md-nav__link">
+      <a href="../Cisco/Voip/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1245,7 +1355,7 @@
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="/TEST/" class="md-nav__link ">
+            <a href="../../TEST/" class="md-nav__link ">
               
   
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M384 192h-64v128H192v128H0v-25.6h166.4v-128h128v-128H384zm-25.6 38.4v128h-128v128H64V512h192V384h128V230.4zm25.6 192h-89.6V512H320v-64h64zM0 0v384h128V256h128V128h128V0z"/></svg>
@@ -1309,7 +1419,7 @@
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="/TEST/CET/" class="md-nav__link ">
+            <a href="../../TEST/CET/" class="md-nav__link ">
               
   
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M96 32c-35.3 0-64 28.7-64 64v288h64V96h384v288h64V96c0-35.3-28.7-64-64-64zm128 352v32H32c-17.7 0-32 14.3-32 32s14.3 32 32 32h512c17.7 0 32-14.3 32-32s-14.3-32-32-32H416v-32c0-17.7-14.3-32-32-32H256c-17.7 0-32 14.3-32 32"/></svg>
@@ -1344,7 +1454,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/TEST/CET/OS/" class="md-nav__link">
+      <a href="../../TEST/CET/OS/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1409,7 +1519,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/TEST/CET/Audio/Audio/" class="md-nav__link">
+      <a href="../../TEST/CET/Audio/Audio/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1482,7 +1592,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/TEST/CET/Security/Cyber%20Security/" class="md-nav__link">
+      <a href="../../TEST/CET/Security/Cyber%20Security/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1546,7 +1656,7 @@
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="/TEST/CLI/" class="md-nav__link ">
+            <a href="../../TEST/CLI/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -1579,7 +1689,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/TEST/CLI/CMD/" class="md-nav__link">
+      <a href="../../TEST/CLI/CMD/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1600,7 +1710,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/TEST/CLI/PoweShell/" class="md-nav__link">
+      <a href="../../TEST/CLI/PoweShell/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1656,7 +1766,7 @@
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="/TEST/CodeBlock/" class="md-nav__link ">
+            <a href="../../TEST/CodeBlock/" class="md-nav__link ">
               
   
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M392.8 1.2c-17-4.9-34.7 5-39.6 22l-128 448c-4.9 17 5 34.7 22 39.6s34.7-5 39.6-22l128-448c4.9-17-5-34.7-22-39.6m80.6 120.1c-12.5 12.5-12.5 32.8 0 45.3l89.3 89.4-89.4 89.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l112-112c12.5-12.5 12.5-32.8 0-45.3l-112-112c-12.5-12.5-32.8-12.5-45.3 0zm-306.7 0c-12.5-12.5-32.8-12.5-45.3 0l-112 112c-12.5 12.5-12.5 32.8 0 45.3l112 112c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256l89.4-89.4c12.5-12.5 12.5-32.8 0-45.3"/></svg>
@@ -1691,7 +1801,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/TEST/CodeBlock/testing-1/" class="md-nav__link">
+      <a href="../../TEST/CodeBlock/testing-1/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1712,7 +1822,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/TEST/CodeBlock/testing-2/" class="md-nav__link">
+      <a href="../../TEST/CodeBlock/testing-2/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1768,7 +1878,7 @@
           
           
           <div class="md-nav__link md-nav__container">
-            <a href="/TEST/SysAdmin/" class="md-nav__link ">
+            <a href="../../TEST/SysAdmin/" class="md-nav__link ">
               
   
   <span class="md-ellipsis">
@@ -1801,7 +1911,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/TEST/SysAdmin/SysAdmin-resources/" class="md-nav__link">
+      <a href="../../TEST/SysAdmin/SysAdmin-resources/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1822,7 +1932,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/TEST/SysAdmin/Users%20%26%20Groups/" class="md-nav__link">
+      <a href="../../TEST/SysAdmin/Users%20%26%20Groups/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -1869,6 +1979,65 @@
   
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#ip-address-classes" class="md-nav__link">
+    <span class="md-ellipsis">
+      IP address classes
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#private-ipv4-address-ranges" class="md-nav__link">
+    <span class="md-ellipsis">
+      Private IPv4 address ranges
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Private IPv4 address ranges">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#private-ip-address-ranges" class="md-nav__link">
+    <span class="md-ellipsis">
+      Private IP address ranges
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ipv4-subnets-sheet" class="md-nav__link">
+    <span class="md-ellipsis">
+      IPv4 Subnets Sheet
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#subnet-calculator" class="md-nav__link">
+    <span class="md-ellipsis">
+      Subnet Calculator
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -1879,8 +2048,337 @@
             <div class="md-content" data-md-component="content">
               <article class="md-content__inner md-typeset">
                 
-  <h1>404 - Not found</h1>
+                  
 
+  
+  
+
+
+  <h1>Subnet</h1>
+
+<h2 id="ip-address-classes">IP address classes<a class="headerlink" href="#ip-address-classes" title="Permanent link">&para;</a></h2>
+<p>IPv4 addresses divide into five classes. The primary difference between the first three classes -- Class A, Class B and Class C -- is the number of subnets versus the number of hosts per subnet.</p>
+<p>The following table outlines the details between IP address classes.</p>
+<p>A subnetwork, or subnet, is a logical subdivision of an IP network.<br />
+The practice of dividing a network into two or more networks is called subnetting.</p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>First octet</th>
+<th>Number of subnets</th>
+<th>Number of hosts</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Class A</td>
+<td>1 to 126</td>
+<td>126</td>
+<td>Approximately 16.7 million</td>
+<td>Many hosts per network.</td>
+</tr>
+<tr>
+<td>Class B</td>
+<td>128 to 191</td>
+<td>16,384</td>
+<td>65,536</td>
+<td>Many hosts per network.</td>
+</tr>
+<tr>
+<td>Class C</td>
+<td>192 to 223</td>
+<td>Approximately 2.1 million</td>
+<td>254</td>
+<td>Many networks with fewer hosts per network.</td>
+</tr>
+<tr>
+<td>Class D</td>
+<td>224 to 239</td>
+<td>n/a</td>
+<td>n/a</td>
+<td>Multicasting.</td>
+</tr>
+<tr>
+<td>Class E</td>
+<td>240 to 254</td>
+<td>n/a</td>
+<td>n/a</td>
+<td>Experimental.</td>
+</tr>
+</tbody>
+</table>
+<p>Class D addresses are for a specific type of communication known as multicasting, which lets a host transmit thousands of data streams to other devices. <br />
+Class E also isn't used with standard IPv4 networking. Instead, IP address researchers use Class E addresses for experimental and developmental purposes. <br />
+This classification system is known as classful addressing. Classful addressing relies on rigid divisions between the network ID and host ID. <br />
+These divisions always occur at the eighth, 16<sup>th</sup> or 24<sup>th</sup> bits in the address.</p>
+<hr />
+<h2 id="private-ipv4-address-ranges">Private IPv4 address ranges<a class="headerlink" href="#private-ipv4-address-ranges" title="Permanent link">&para;</a></h2>
+<h3 id="private-ip-address-ranges">Private IP address ranges<a class="headerlink" href="#private-ip-address-ranges" title="Permanent link">&para;</a></h3>
+<p>Systems and sites on the public internet consume most of the roughly 4.3 billion available IPv4 addresses. <br />
+However, private networks can reserve some ranges for internal use. <br />
+Networks in home offices and businesses likely use one of these ranges.</p>
+<table>
+<thead>
+<tr>
+<th>Reserved class</th>
+<th>Range</th>
+<th>Default subnet mask</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Class A</td>
+<td>10.0.0.0</td>
+<td>255.0.0.0</td>
+<td>Larger networks with many hosts.</td>
+</tr>
+<tr>
+<td>Class B</td>
+<td>172.16.0.0</td>
+<td>255.255.0.0</td>
+<td>Medium networks with a moderate number of hosts.</td>
+</tr>
+<tr>
+<td>Class C</td>
+<td>192.168.0.0</td>
+<td>255.255.255.0</td>
+<td>Smaller networks with fewer hosts.</td>
+</tr>
+</tbody>
+</table>
+<div style="page-break-after: always"></div>
+
+<h2 id="ipv4-subnets-sheet">IPv4 Subnets Sheet<a class="headerlink" href="#ipv4-subnets-sheet" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;"><strong>CIDR</strong></th>
+<th style="text-align: center;"><strong>Subnet Mask</strong></th>
+<th style="text-align: right;"><strong>Total IPs</strong></th>
+<th style="text-align: right;"><strong>Usable IPs</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">/32</td>
+<td style="text-align: center;">255.255.255.255</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr>
+<td style="text-align: center;">/31</td>
+<td style="text-align: center;">255.255.255.254</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr>
+<td style="text-align: center;">/30</td>
+<td style="text-align: center;">255.255.255.252</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr>
+<td style="text-align: center;">/29</td>
+<td style="text-align: center;">255.255.255.248</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">6</td>
+</tr>
+<tr>
+<td style="text-align: center;">/28</td>
+<td style="text-align: center;">255.255.255.240</td>
+<td style="text-align: right;">16</td>
+<td style="text-align: right;">14</td>
+</tr>
+<tr>
+<td style="text-align: center;">/27</td>
+<td style="text-align: center;">255.255.255.224</td>
+<td style="text-align: right;">32</td>
+<td style="text-align: right;">30</td>
+</tr>
+<tr>
+<td style="text-align: center;">/26</td>
+<td style="text-align: center;">255.255.255.192</td>
+<td style="text-align: right;">64</td>
+<td style="text-align: right;">62</td>
+</tr>
+<tr>
+<td style="text-align: center;">/25</td>
+<td style="text-align: center;">255.255.255.128</td>
+<td style="text-align: right;">128</td>
+<td style="text-align: right;">126</td>
+</tr>
+<tr>
+<td style="text-align: center;">/24</td>
+<td style="text-align: center;">255.255.255.0</td>
+<td style="text-align: right;">256</td>
+<td style="text-align: right;">254</td>
+</tr>
+<tr>
+<td style="text-align: center;">/23</td>
+<td style="text-align: center;">255.255.254.0</td>
+<td style="text-align: right;">512</td>
+<td style="text-align: right;">510</td>
+</tr>
+<tr>
+<td style="text-align: center;">/22</td>
+<td style="text-align: center;">255.255.252.0</td>
+<td style="text-align: right;">1024</td>
+<td style="text-align: right;">1022</td>
+</tr>
+<tr>
+<td style="text-align: center;">/21</td>
+<td style="text-align: center;">255.255.248.0</td>
+<td style="text-align: right;">2048</td>
+<td style="text-align: right;">2046</td>
+</tr>
+<tr>
+<td style="text-align: center;">/20</td>
+<td style="text-align: center;">255.255.240.0</td>
+<td style="text-align: right;">4096</td>
+<td style="text-align: right;">4094</td>
+</tr>
+<tr>
+<td style="text-align: center;">/19</td>
+<td style="text-align: center;">255.255.224.0</td>
+<td style="text-align: right;">8192</td>
+<td style="text-align: right;">8190</td>
+</tr>
+<tr>
+<td style="text-align: center;">/18</td>
+<td style="text-align: center;">255.255.192.0</td>
+<td style="text-align: right;">16,384</td>
+<td style="text-align: right;">16,382</td>
+</tr>
+<tr>
+<td style="text-align: center;">/17</td>
+<td style="text-align: center;">255.255.128.0</td>
+<td style="text-align: right;">32,768</td>
+<td style="text-align: right;">32,766</td>
+</tr>
+<tr>
+<td style="text-align: center;">/16</td>
+<td style="text-align: center;">255.255.0.0</td>
+<td style="text-align: right;">65,536</td>
+<td style="text-align: right;">65,534</td>
+</tr>
+<tr>
+<td style="text-align: center;">/15</td>
+<td style="text-align: center;">255.254.0.0</td>
+<td style="text-align: right;">131,072</td>
+<td style="text-align: right;">131,070</td>
+</tr>
+<tr>
+<td style="text-align: center;">/14</td>
+<td style="text-align: center;">255.252.0.0</td>
+<td style="text-align: right;">262,144</td>
+<td style="text-align: right;">262,142</td>
+</tr>
+<tr>
+<td style="text-align: center;">/13</td>
+<td style="text-align: center;">255.248.0.0</td>
+<td style="text-align: right;">524,288</td>
+<td style="text-align: right;">524,286</td>
+</tr>
+<tr>
+<td style="text-align: center;">/12</td>
+<td style="text-align: center;">255.240.0.0</td>
+<td style="text-align: right;">1,048,576</td>
+<td style="text-align: right;">1,048,574</td>
+</tr>
+<tr>
+<td style="text-align: center;">/11</td>
+<td style="text-align: center;">255.224.0.0</td>
+<td style="text-align: right;">2,097,152</td>
+<td style="text-align: right;">2,097,150</td>
+</tr>
+<tr>
+<td style="text-align: center;">/10</td>
+<td style="text-align: center;">255.192.0.0</td>
+<td style="text-align: right;">4,194,304</td>
+<td style="text-align: right;">4,194,302</td>
+</tr>
+<tr>
+<td style="text-align: center;">/9</td>
+<td style="text-align: center;">255.128.0.0</td>
+<td style="text-align: right;">8,388,608</td>
+<td style="text-align: right;">8,388,606</td>
+</tr>
+<tr>
+<td style="text-align: center;">/8</td>
+<td style="text-align: center;">255.0.0.0</td>
+<td style="text-align: right;">16,777,216</td>
+<td style="text-align: right;">16,777,214</td>
+</tr>
+<tr>
+<td style="text-align: center;">/7</td>
+<td style="text-align: center;">254.0.0.0</td>
+<td style="text-align: right;">33,554,432</td>
+<td style="text-align: right;">33,554,430</td>
+</tr>
+<tr>
+<td style="text-align: center;">/6</td>
+<td style="text-align: center;">252.0.0.0</td>
+<td style="text-align: right;">67,108,864</td>
+<td style="text-align: right;">67,108,862</td>
+</tr>
+<tr>
+<td style="text-align: center;">/5</td>
+<td style="text-align: center;">248.0.0.0</td>
+<td style="text-align: right;">134,217,728</td>
+<td style="text-align: right;">134,217,726</td>
+</tr>
+<tr>
+<td style="text-align: center;">/4</td>
+<td style="text-align: center;">240.0.0.0</td>
+<td style="text-align: right;">268,435,456</td>
+<td style="text-align: right;">268,435,454</td>
+</tr>
+<tr>
+<td style="text-align: center;">/3</td>
+<td style="text-align: center;">224.0.0.0</td>
+<td style="text-align: right;">536,870,912</td>
+<td style="text-align: right;">536,870,910</td>
+</tr>
+<tr>
+<td style="text-align: center;">/2</td>
+<td style="text-align: center;">192.0.0.0</td>
+<td style="text-align: right;">1,073,741,824</td>
+<td style="text-align: right;">1,073,741,822</td>
+</tr>
+<tr>
+<td style="text-align: center;">/1</td>
+<td style="text-align: center;">128.0.0.0</td>
+<td style="text-align: right;">2,147,483,648</td>
+<td style="text-align: right;">2,147,483,646</td>
+</tr>
+</tbody>
+</table>
+<div style="page-break-after: always"></div>
+
+<hr />
+<h2 id="subnet-calculator">Subnet Calculator<a class="headerlink" href="#subnet-calculator" title="Permanent link">&para;</a></h2>
+<p><a href="https://mxtoolbox.com/subnetcalculator.aspx">Mx Tool Box</a></p>
+<p><a href="https://www.solarwinds.com/free-tools/advanced-subnet-calculator">Solar Winds</a></p>
+<p><a href="https://www.vultr.com/resources/subnet-calculator/">Vultr</a></p>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+                
               </article>
             </div>
           
@@ -1898,6 +2396,44 @@
       
         <footer class="md-footer">
   
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../OSI/" class="md-footer__link md-footer__link--prev" aria-label="Previous: OSI">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256l137.3-137.4c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                OSI
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../Cisco/CET-Packet-Tracer-IOS/" class="md-footer__link md-footer__link--next" aria-label="Next: CISCO IOS">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                CISCO IOS
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
     
   
   <div class="md-footer-meta md-typeset">
@@ -1956,14 +2492,14 @@
       <div class="md-progress" data-md-component="progress" role="progressbar"></div>
     
     
-    <script id="__config" type="application/json">{"base": "/", "features": ["navigation.top", "navigation.instant", "navigation.instant.prefetch", "navigation.instant.progress", "navigation.instant.preview", "navigation.tracking", "navigation.tabs", "navigation.tabs.sticky", "navigation.sections", "navigation.path", "navigation.indexes", "navigation.footer", "search.suggest", "search.highlight", "search.share", "content.code.copy", "content.code.select"], "search": "/assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.top", "navigation.instant", "navigation.instant.prefetch", "navigation.instant.progress", "navigation.instant.preview", "navigation.tracking", "navigation.tabs", "navigation.tabs.sticky", "navigation.sections", "navigation.path", "navigation.indexes", "navigation.footer", "search.suggest", "search.highlight", "search.share", "content.code.copy", "content.code.select"], "search": "../../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="/assets/javascripts/bundle.83f73b43.min.js"></script>
+      <script src="../../assets/javascripts/bundle.83f73b43.min.js"></script>
       
-        <script src="/js/open_in_new_tab.js"></script>
+        <script src="../../js/open_in_new_tab.js"></script>
       
-        <script src="/termynal.js"></script>
+        <script src="../../termynal.js"></script>
       
     
   </body>
