@@ -1,6 +1,6 @@
 ---
 title: Subnet
-icon: fontawesome/brands/osi
+icon: fontawesome/solid/network-wired
 author: €u
 ---
 ## IP address classes
