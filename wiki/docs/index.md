@@ -6,4 +6,4 @@ icon: fontawesome/solid/house
 
 ---
 
-![](static.gif){ width="1200" }
+![Static](static.gif){ width="1200" }
